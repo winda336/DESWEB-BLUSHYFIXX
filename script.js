@@ -8,13 +8,13 @@
         desc: 'Serum pencerah wajah dengan vitamin C & ekstrak buah alami. Membuat kulit lebih cerah dan lembap.',
         img: 'image/somth_serum.jpeg'
       },
-     {
-          id: 'bedak',
-          name: 'Bedak Luxcrime',
-          price: 61700,
-          desc: 'Bedak ringan dan ultra-halus ini menyerap minyak berlebih dan mengecilkan pori-pori tanpa terlihat menggumpal.',
-          img: 'image/luxrime_bedak.jpg'
-     },
+      {
+        id: 'bedak',
+        name: 'Bedak Luxcrime',
+        price: 61700,
+        desc: 'Bedak ringan dan ultra-halus ini menyerap minyak berlebih dan mengecilkan pori-pori tanpa terlihat menggumpal.',
+        img: 'image/luxrime_bedak.jpg'
+      },
       {
         id: 'lip-tint',
         name: 'Lip Tint Dear Me',
@@ -500,6 +500,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
