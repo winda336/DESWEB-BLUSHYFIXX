@@ -57,7 +57,7 @@
         desc: 'membantu menghapus makeup secara mudah dan menyeluruh',
         img : 'image/sm_micellar water.jpg'
       },
-           {
+      {
         id: 'contour',
         name: 'Contour Luxcrime',
         price: 88590,
@@ -85,7 +85,7 @@
         desc: 'eyeshadow dari Mother of Pearl dengan 3 shades hadir dengan kombinasi warna yang cantik',
         img: 'image/mop_eyeshadow.jpg'
       },
-           {
+      {
         id: 'moisturizer',
         name: 'Moisturizer Skintific',
         price: 111112,
@@ -598,6 +598,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
