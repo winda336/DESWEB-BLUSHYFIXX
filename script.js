@@ -35,7 +35,77 @@
         price: 85000,
         desc: 'Toner pH seimbang dengan bahan soothing untuk menenangkan kulit setelah cuci muka.',
         img: 'https://images.unsplash.com/photo-1580215076047-8a13b5e2d6d6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d'
-      }
+      },
+      {
+        id: 'micellar water',
+        name: 'sea makeup micellar water',
+        price: 65000,
+        desc: 'membantu menghapus makeup secara mudah dan menyeluruh',
+        img : 'image/sm_micellar water.jpg'
+      },
+      {
+        id: 'primer',
+        name: 'primer MOP',
+        price: 170000,
+        desc: 'primer dengan formula yang dapat melembabkan, mengencangkan, dan meminimalkan tampilan pori-pori di wajah',
+        img: 'image/mop_primer.jpg'
+      },
+      {
+        id: 'eyeshadow',
+        name: 'eyeshadow MOP',
+        price: 200000,
+        desc: 'eyeshadow dari Mother of Pearl dengan 3 shades hadir dengan kombinasi warna yang cantik',
+        img: 'image/mop_eyeshadow.jpg'
+      },
+      {
+        id: 'foundation',
+        name: 'foundation MOP',
+        price: 170500,
+        desc: 'hybrid matte foundation dengan formula baru dan kemasan airless pump dengan coverage super tinggi',
+        img: 'image/mop_foundat.jpg'
+      },
+      {
+        id: 'lip cream',
+        name: 'lip cream MOP',
+        price: 59500,
+        desc: 'lip cream matte yang creamy dan hadir dengan beragam warna nude',
+        img: 'image/mop_lip cream.jpg'
+      },
+      {
+        id: 'loose powder',
+        name: 'loose powder MOP',
+        price: 150000,
+        desc: 'microblur translucent loose powder untuk kunci makeup dan samarkan pori-pori',
+        img: 'image/mop_loose powder.jpg'
+      },
+      {
+        id: 'lip balm',
+        name: 'sea makeup lip balm',
+        price: 53800,
+        desc: 'tinted lip balm dengan warna yang vibrant dan strong glossy effect',
+        img: 'image/sm_lipbalm.jpg'
+      },
+      {
+        id: 'loose powder',
+        name: 'sea makeup loose powder',
+        price: 78000,
+        desc: 'dilengkapi dengan puff yang lembut, dapat menyamarkan pori-pori dan awet sepanjang hari',
+        img: 'image/sm_loose powder.jpg'
+      },
+      {
+        id: 'setting spray',
+        name: 'sea makeup setting spray',
+        price: 120000,
+        desc: 'kunci makeup tahan lama serta segar sepanjang hari',
+        img: 'image/sm_setting spray.jpg'
+      },
+      {
+        id: 'blush on',
+        name: 'sea makeup vibrant flushed liquid blush',
+        price: 70000,
+        desc: 'blush on cair yang diformulasikan khusus untuk kulit berjerawat',
+        img: 'image/sm_blush.jpg'
+      },
     ];
 
     /* ======= HELPERS ======= */
@@ -423,5 +493,6 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
