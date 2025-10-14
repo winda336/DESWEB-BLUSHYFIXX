@@ -217,70 +217,70 @@
     name: 'Time Lip Stain',
     price: 58000,
     desc: 'Lip stain ringan dengan hasil natural dan warna tahan lama, cocok untuk daily look.',
-    img: 'images/time_lip stain.jpg'
+    img: 'image/time_lip stain.jpg'
   },
   {
     id: 'pinkflash-lipcream',
     name: 'Pinkflash Lip Cream',
     price: 59500,
     desc: 'Lip cream matte yang creamy dan hadir dengan beragam warna nude.',
-    img: 'images/pinkflash_lip cream.jpg'
+    img: 'image/pinkflash_lip cream.jpg'
   },
   {
     id: 'time-cushion',
     name: 'Time Cushion',
     price: 95000,
     desc: 'Cushion dengan hasil akhir satin glow yang tahan lama dan ringan di kulit.',
-    img: 'images/time_cushion.jpg'
+    img: 'image/time_cushion.jpg'
   },
   {
     id: 'pinkflash-eyeshadow3',
     name: 'Pinkflash 3 Eyeshadow',
     price: 48000,
     desc: 'Palet eyeshadow mini dengan 3 warna intens dan mudah dibaurkan.',
-    img: 'images/pinkflash_3 eyeshadow.jpg'
+    img: 'image/pinkflash_3 eyeshadow.jpg'
   },
   {
     id: 'time-contour',
     name: 'Time Contour',
     price: 72000,
     desc: 'Contour dengan tekstur creamy yang mudah dibaurkan, memberikan dimensi natural pada wajah.',
-    img: 'images/time_contour.jpg'
+    img: 'image/time_contour.jpg'
   },
   {
     id: 'pinkflash-lipglaze',
     name: 'Pinkflash Lip Glaze',
     price: 56500,
     desc: 'Lip gloss ringan dengan kilau lembut, memberikan hasil glossy tanpa rasa lengket.',
-    img: 'images/pinkflash_lip glaze.jpg'
+    img: 'image/pinkflash_lip glaze.jpg'
   },
   {
     id: 'time-lipmatte',
     name: 'Time Lip Matte',
     price: 63000,
     desc: 'Lip matte lembut dengan warna intens dan hasil akhir velvet yang tidak membuat bibir kering.',
-    img: 'images/time_lip matte.jpg'
+    img: 'image/time_lip matte.jpg'
   },
   {
     id: 'pinkflash-bundlingmaskara',
     name: 'Pinkflash Bundling Maskara',
     price: 78000,
     desc: 'Paket bundling maskara waterproof untuk tampilan bulu mata lebih tebal dan lentik.',
-    img: 'images/pinkflash_bundling maskara.jpg'
+    img: 'image/pinkflash_bundling maskara.jpg'
   },
   {
     id: 'time-stellardust',
     name: 'Time Stellar Dust Lip Stain',
     price: 64000,
     desc: 'Lip stain berkilau dengan efek shimmering lembut, memberikan kesan elegan dan mempesona.',
-    img: 'images/time_stellar dust lip stain.jpg'
+    img: 'image/time_stellar dust lip stain.jpg'
   },
   {
     id: 'pinkflash-eyeshadow',
     name: 'Pinkflash Eyeshadow',
     price: 50500,
     desc: 'Eyeshadow palette dengan pilihan warna nude dan shimmer, mudah diaplikasikan untuk daily look.',
-    img: 'images/pinkflash_eyeshadow.jpg'
+    img: 'image/pinkflash_eyeshadow.jpg'
   },
 
     ];
@@ -670,6 +670,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
