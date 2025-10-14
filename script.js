@@ -211,7 +211,6 @@
         desc: 'Sunscreen 2-in-1 dengan efek mencerahkan ini memberikan perlindungan SPF 50 PA++++ sekaligus memberikan tone up secara instan tanpa meninggalkan white cast.',
         img: 'image/skin_bright sunscreen.jpg'
       },
-    const products = [
   {
     id: 'time-lipstain',
     name: 'Time Lip Stain',
@@ -670,6 +669,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
