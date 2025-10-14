@@ -6,28 +6,28 @@
         name: 'Serum Glow Up',
         price: 120000,
         desc: 'Serum pencerah wajah dengan vitamin C & ekstrak buah alami. Membuat kulit lebih cerah dan lembap.',
-        img: 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8d2e2ae3f4b9f4a9a2b3c4d5e6f7a8b9'
+        img: 'image/somth_serum.jpeg'
       },
       {
-        id: 'lip-tint-blossom',
-        name: 'Lip Tint Blossom',
+        id: 'lip-tint-dear-me',
+        name: 'Lip Tint Dear Me',
         price: 75000,
         desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari.',
-        img: 'https://images.unsplash.com/photo-1516275467616-73b8c5d1b9c8?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d'
+        img: 'image/dearme_lip tint.png'
       },
       {
-        id: 'face-wash-minty',
-        name: 'Face Wash Minty',
+        id: 'face-wash-somethinc',
+        name: 'Face Wash Somethinc',
         price: 60000,
         desc: 'Pembersih wajah dengan aroma mint, membantu menyegarkan dan membersihkan kotoran ringan.',
-        img: 'https://images.unsplash.com/photo-1618354691804-11d895b2d0b7?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f2e3d4c5b6a79808796a5b4c3d2e1f0'
+        img: 'image/someth_cuci muka.png'
       },
       {
-        id: 'moisturizer-dream',
-        name: 'Moisturizer Dream',
+        id: 'moisturizer-gald-2-glow',
+        name: 'Moisturizer Glad 2 Glow',
         price: 145000,
         desc: 'Pelembap harian yang tidak lengket, memberikan efek glowing natural dan perlindungan kelembapan.',
-        img: 'https://images.unsplash.com/photo-1556228720-9c5c73b0d38b?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c4b5a6d7e8f90123456789abcdef012'
+        img: 'image/g2g_retinol moisturizer.jpg'
       },
       {
         id: 'toner-fresh',
@@ -423,3 +423,4 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
