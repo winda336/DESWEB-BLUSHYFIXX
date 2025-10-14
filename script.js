@@ -22,7 +22,7 @@
         desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari.',
         img: 'image/dearme_lip tint.png'
       },
-           {
+      {
         id: 'sunscreen',
         name: 'Sunscreen Skintific',
         price: 77520,
@@ -598,6 +598,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
