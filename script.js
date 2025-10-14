@@ -22,6 +22,13 @@
         desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari.',
         img: 'image/dearme_lip tint.png'
       },
+           {
+        id: 'sunscreen',
+        name: 'Sunscreen Skintific',
+        price: 77520,
+        desc: 'Skintific 5X Ceramide Serum Sunscreen hadir sebagai perisai UV tak terlihat yang menjaga kulitmu dari bahaya sinar UVA, UVB, dan Blue Light-tanpa rasa lengket.',
+        img: 'image/skin_sunscreen.jpg'
+      },
       {
         id: 'face-wash',
         name: 'Face Wash Somethinc',
@@ -50,6 +57,13 @@
         desc: 'membantu menghapus makeup secara mudah dan menyeluruh',
         img : 'image/sm_micellar water.jpg'
       },
+           {
+        id: 'contour',
+        name: 'Contour Luxcrime',
+        price: 88590,
+        desc: 'Sangat mudah dibaurkan dan dibentuk, meluncur tanpa bobot, sehingga mudah diaplikasikan.',
+        img: 'image/luxcrime_contour.jpg'
+      },
       {
         id: 'primer',
         name: 'primer MOP',
@@ -58,11 +72,25 @@
         img: 'image/mop_primer.jpg'
       },
       {
+        id: 'lip',
+        name: 'Lip Vinyl Luxcrime',
+        price: 76820,
+        desc: 'Lipstik cair tahan transfer dengan kilau tinggi, tahan lama, dan hasil akhir berkilau sepanjang hari.',
+        img: 'image/luxcrime_lip vinyl.jpg'
+      },
+      {
         id: 'eyeshadow',
         name: 'eyeshadow MOP',
         price: 200000,
         desc: 'eyeshadow dari Mother of Pearl dengan 3 shades hadir dengan kombinasi warna yang cantik',
         img: 'image/mop_eyeshadow.jpg'
+      },
+           {
+        id: 'moisturizer',
+        name: 'Moisturizer Skintific',
+        price: 111112,
+        desc: 'Moisturizer dengan tekstur gel yang dikhususkan untuk menenangkan kulit yang kemerahan dan berjerawat.',
+        img: 'image/skin_pathenol.jpg'
       },
       {
         id: 'foundation',
@@ -72,6 +100,20 @@
         img: 'image/mop_foundat.jpg'
       },
       {
+        id: 'lip',
+        name: 'Lip Serum Skintific',
+        price: 116000,
+        desc: 'Serum bibir pertama dengan 3 manfaat unggulan: Mencerahkan, Menghaluskan, Meratakan. Perawatan untuk bibir gelap, dua warna, dan kering dalam 1 produk.',
+        img: 'image/skin_lip serum.jpg'
+      },
+      {
+        id: 'cushion',
+        name: 'Cushion Skintific',
+        price: 169000,
+        desc: 'Cushion dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin. Coverage tinggi yang dapat menutup noda hitam, mata panda, dan skin imperfections dalam 1 kali tap.',
+        img: 'image/skin_cushion.jpg'
+      },
+      {
         id: 'lip cream',
         name: 'lip cream MOP',
         price: 59500,
@@ -79,11 +121,39 @@
         img: 'image/mop_lip cream.jpg'
       },
       {
+        id: 'bedak',
+        name: 'Bedak Skintific',
+        price: 149000,
+        desc: 'Bedak Tabur Invisiblur All Day dengan hasil akhir matte instan, sempurna, dan bebas kilap. Dengan teknologi polimer soft-focus, tampil percaya diri dari siang hingga malam dengan riasan tahan lama 12 jam.',
+        img: 'image/skin_bedak.jpg'
+      },
+      {
+        id: 'wipes',
+        name: 'Wipes Luxcrime',
+        price: 47500,
+        desc: 'Tisu pembersih siap pakai yang dengan lembut dan efektif menghapus riasan tanpa membuat kulit kering atau membutuhkan air.',
+        img: 'image/luxcrime_wipes.jpg'
+      },
+      {
         id: 'loose powder',
         name: 'loose powder MOP',
         price: 150000,
         desc: 'microblur translucent loose powder untuk kunci makeup dan samarkan pori-pori',
         img: 'image/mop_loose powder.jpg'
+      },
+      {
+        id: 'cushion',
+        name: 'Cushion Skintific',
+        price: 169000,
+        desc: 'Cushion dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin. Coverage tinggi yang dapat menutup noda hitam, mata panda, dan skin imperfections dalam 1 kali tap.',
+        img: 'image/skin_cushion.jpg'
+      },
+      {
+        id: 'sunscreen',
+        name: 'Sunscreen Luxcrime',
+        price: 68500,
+        desc: 'Tabir surya ultra-halus dan ringan dengan SPF50+ untuk menyegarkan penampilan Anda dan mengaplikasikan kembali perlindungan UV Anda sepanjang hari.',
+        img: 'image/luxcrime_sunscreen.jpg'
       },
       {
         id: 'lip balm',
@@ -100,6 +170,13 @@
         img: 'image/sm_loose powder.jpg'
       },
       {
+        id: 'skin tint',
+        name: 'Skin Tint Luxcrime',
+        price: 125150,
+        desc: 'Skin Tint yang ringan dengan coverage yang dapat dibangun yang memberikan cahaya dan warna kulit yang lebih merata dan tampak sehat, sekaligus menghidrasi dan melindungi kulit dari sinar matahari.',
+        img: 'image/luxcrime_skin tint.jpg'
+      },
+      {
         id: 'setting spray',
         name: 'sea makeup setting spray',
         price: 120000,
@@ -107,11 +184,32 @@
         img: 'image/sm_settspray.jpg'
       },
       {
+        id: 'concelear',
+        name: 'Concelear Skintific',
+        price: 69000,
+        desc: 'Concealer ringan dengan coverage tinggi, cocok untuk menyamarkan pori-pori dan menutupi ketidaksempurnaan kulit.',
+        img: 'image/skin_concelear.jpg'
+      },
+      {
         id: 'blush on',
         name: 'sea makeup vibrant flushed liquid blush',
         price: 70000,
         desc: 'blush on cair yang diformulasikan khusus untuk kulit berjerawat',
         img: 'image/sm_blush.jpg'
+      },
+      {
+        id: 'lip',
+        name: 'Lip velvet Luxcrime',
+        price: 63000,
+        desc: 'Teksturnya yang lembut dan halus saat diaplikasikan, meninggalkan rasa lembut dan halus seperti beludru untuk kenyamanan pemakaian. Diperkaya dengan Vitamin E, Minyak Jojoba, dan Squalene untuk menjaga bibir tetap lembut.',
+        img: 'image/luxrime_lip velvet.jpg'
+      },
+      {
+        id: 'sunscreen',
+        name: 'Bright Sunscreen Skintific',
+        price: 71091,
+        desc: 'Sunscreen 2-in-1 dengan efek mencerahkan ini memberikan perlindungan SPF 50 PA++++ sekaligus memberikan tone up secara instan tanpa meninggalkan white cast.',
+        img: 'image/skin_bright sunscreen.jpg'
       },
     ];
 
@@ -500,6 +598,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
