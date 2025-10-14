@@ -202,7 +202,7 @@
         name: 'Lip velvet Luxcrime',
         price: 63000,
         desc: 'Teksturnya yang lembut dan halus saat diaplikasikan, meninggalkan rasa lembut dan halus seperti beludru untuk kenyamanan pemakaian. Diperkaya dengan Vitamin E, Minyak Jojoba, dan Squalene untuk menjaga bibir tetap lembut.',
-        img: 'image/luxrime_lip velvet.jpg'
+        img: 'image/luxrcime_lip velvet.jpg'
       },
       {
         id: 'sunscreen',
@@ -598,6 +598,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
