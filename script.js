@@ -2,28 +2,28 @@
      /* ========== DATA PRODUK (gunakan gambar publik dari Unsplash/CDN) ========== */
     const products = [
       {
-        id: 'serum-glow',
+        id: 'serum',
         name: 'Serum Glow Up',
         price: 120000,
         desc: 'Serum pencerah wajah dengan vitamin C & ekstrak buah alami. Membuat kulit lebih cerah dan lembap.',
         img: 'image/somth_serum.jpeg'
       },
       {
-        id: 'lip-tint-dear-me',
+        id: 'lip-tint',
         name: 'Lip Tint Dear Me',
         price: 75000,
         desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari.',
         img: 'image/dearme_lip tint.png'
       },
       {
-        id: 'face-wash-somethinc',
+        id: 'face-wash',
         name: 'Face Wash Somethinc',
         price: 60000,
         desc: 'Pembersih wajah dengan aroma mint, membantu menyegarkan dan membersihkan kotoran ringan.',
         img: 'image/someth_cuci muka.png'
       },
       {
-        id: 'moisturizer-gald-2-glow',
+        id: 'moisturizer',
         name: 'Moisturizer Glad 2 Glow',
         price: 145000,
         desc: 'Pelembap harian yang tidak lengket, memberikan efek glowing natural dan perlindungan kelembapan.',
@@ -423,4 +423,5 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
