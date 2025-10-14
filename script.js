@@ -211,6 +211,76 @@
         desc: 'Sunscreen 2-in-1 dengan efek mencerahkan ini memberikan perlindungan SPF 50 PA++++ sekaligus memberikan tone up secara instan tanpa meninggalkan white cast.',
         img: 'image/skin_bright sunscreen.jpg'
       },
+      {
+    id: 'lip stain',
+    name: 'Time Phoria Stellar Dust Lip Stain 5ml - 04 Cherrion',
+    price: 75000,
+    desc: 'Lip stain dengan warna intens dan formula ringan yang tidak membuat bibir kering.',
+    img: 'images/Time Phoria Stellar Dust Lip Stain 5ml - 04 Cherrion.jpg'
+  },
+  {
+    id: 'cushion',
+    name: 'Timeless Lumina Matte Cushion',
+    price: 120000,
+    desc: 'Cushion dengan hasil matte natural dan coverage tinggi untuk tampilan flawless.',
+    img: 'images/timeless lumina matte cushion.jpg'
+  },
+  {
+    id: 'eyeshadow',
+    name: 'PINKFLASH Eyeshadow Palette',
+    price: 65000,
+    desc: 'Palet eyeshadow dengan warna lembut dan pigmentasi tinggi untuk tampilan menawan.',
+    img: 'images/PINKFLASH Eyeshadow Palette.jpg'
+  },
+  {
+    id: 'lip',
+    name: 'PINKFLASH Bubble Glow Lip Glazed Tint Smooth, Transferproof, Glossy',
+    price: 37000,
+    desc: 'Lip tint glossy dengan hasil natural dan tahan lama tanpa rasa lengket.',
+    img: 'images/PINKFLASH Bubble Glow Lip Glazed Tint Smooth, Transfer-proof long-lasting color pfl21.jpg'
+  },
+  {
+    id: 'lip',
+    name: 'Time Phoria Lip Matte',
+    price: 69000,
+    desc: 'Lip matte lembut dengan hasil akhir halus dan tahan lama.',
+    img: 'images/time phoria lip matte.jpg'
+  },
+  {
+    id: 'bundling',
+    name: 'Bundling Hemat 2 pcs PINKFLASH Mascara and Eyeliner Evenly Pigmented Long Lasting Waterproof',
+    price: 48000,
+    desc: 'Bundling hemat 2 produk PINKFLASH: maskara dan eyeliner waterproof dengan hasil pigmented dan tahan lama.',
+    img: 'images/Bundling Hemat 2 pcs PINKFLASH Mascara and Eyeliner Evenly Pigmented Long Lasting Waterproof.jpg'
+  },
+  {
+    id: 'lip creaam',
+    name: 'PinkFlash Lasting Matte Lip Cream',
+    price: 19000,
+    desc: 'Lip cream matte tahan lama dengan warna nude yang lembut dan ringan di bibir.',
+    img: 'images/Pinkflash Lasting Matte Lip Cream.jpg'
+  },
+  {
+    id: 'eyeshadow',
+    name: 'PinkFlash 3 Pan Eyeshadow',
+    price: 52000,
+    desc: 'Palet eyeshadow 3 warna praktis dengan hasil pigmented dan mudah dibaurkan.',
+    img: 'images/PinkFlash 3 Pan Eyeshadow.jpg'
+  },
+  {
+    id: 'contour',
+    name: 'Timephoria Eclipse Spark 2 In 1 Face Contour',
+    price: 115000,
+    desc: 'Kontur wajah 2-in-1 praktis untuk shading dan highlighting yang halus.',
+    img: 'images/Timephoria Eclipse Spark 2 In 1 Face Contour.jpg'
+  },
+  {
+    id: 'lip',
+    name: 'Time Phoria Stellar Dust Lip Stain',
+    price: 72000,
+    desc: 'Lip stain dengan efek glossy lembut dan warna menawan.',
+    img: 'images/time phoria stellar dust lip stain.jpg'
+  }
     ];
 
     /* ======= HELPERS ======= */
@@ -598,6 +668,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
