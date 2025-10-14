@@ -97,7 +97,7 @@
         name: 'sea makeup setting spray',
         price: 120000,
         desc: 'kunci makeup tahan lama serta segar sepanjang hari',
-        img: 'image/sm_setting spray.jpg'
+        img: 'image/sm_settspray.jpg'
       },
       {
         id: 'blush on',
@@ -493,6 +493,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
