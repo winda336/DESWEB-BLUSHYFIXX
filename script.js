@@ -90,7 +90,7 @@
         name: 'Moisturizer Skintific',
         price: 111112,
         desc: 'Moisturizer dengan tekstur gel yang dikhususkan untuk menenangkan kulit yang kemerahan dan berjerawat.',
-        img: 'image/skin_pathenol.jpg'
+        img: 'image/skin_patenol.jpg'
       },
       {
         id: 'foundation',
@@ -598,6 +598,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
