@@ -1,5 +1,4 @@
 
-     /* ========== DATA PRODUK (gunakan gambar publik dari Unsplash/CDN) ========== */
     const products = [
       {
         id: 'bedak',
@@ -388,7 +387,7 @@
       },
       {
         id: 'Milk Amino',
-        name: 'Milk Amino Gland 2 Glow',
+        name: 'Milk Amino Glad 2 Glow',
         price: 65000,
         desc: 'Milk Amino dengan essence berbasis susu untuk menjaga kelembapan kulit',
         img: 'image/g2g_milk amino.jpg'
@@ -402,7 +401,7 @@
       },
       {
         id: 'Power Bright Serum',
-        name: 'Power Bright Serum Gland 2 Glow',
+        name: 'Power Bright Serum Glad 2 Glow',
         price: 89000,
         desc: 'Power Bright Serum pencerah wajah dengan kandungan vitamin C untuk mengatasi noda hitam dan warna kulit yang tidak merata',
         img: 'image/g2g_power bright serum.jpg'
@@ -416,19 +415,17 @@
       },
       {
         id: 'Serum',
-        name: 'Serum Gland 2 Glow',
+        name: 'Serum Glad 2 Glow',
         price: 75000,
         desc: 'Serum dengan multifungsi yang membantu menutrisi kulit dan menjaga elastisitas',
         img: 'image/g2g_serum.jpg'
       }
     ];
 
-    /* ======= HELPERS ======= */
     function formatRupiah(n){
       return 'Rp' + Number(n).toLocaleString('id-ID');
     }
 
-    /* ======= RENDER PRODUCTS ======= */
     const grid = document.getElementById('productGrid');
     function renderProducts(filterText = '') {
       grid.innerHTML = '';
@@ -452,7 +449,6 @@
     }
     renderProducts();
 
-    /* ======= CART (localStorage) ======= */
     let cart = JSON.parse(localStorage.getItem('blushy_cart') || '[]');
     function saveCart(){ localStorage.setItem('blushy_cart', JSON.stringify(cart)); updateCartCount(); }
 
@@ -461,7 +457,6 @@
     }
     updateCartCount();
 
-    /* ======= EVENTS: add to cart & view detail ======= */
     document.addEventListener('click', (ev) => {
       const addId = ev.target.getAttribute('data-add');
       const detailId = ev.target.getAttribute('data-detail');
@@ -478,12 +473,10 @@
       }
     });
 
-    /* ======= SEARCH ======= */
     document.getElementById('searchInput').addEventListener('input', (e)=>{
       renderProducts(e.target.value);
     });
 
-    /* ======= MODAL UTILS ======= */
     const backdrop = document.getElementById('backdrop');
     const modalBox = document.getElementById('modalBox');
 
@@ -497,12 +490,10 @@
       modalBox.innerHTML = '';
     }
 
-    // close when click outside modal content
     backdrop.addEventListener('click', (e)=>{
       if(e.target === backdrop) closeBackdrop();
     });
 
-    /* ======= PRODUCT DETAIL MODAL ======= */
     function openModalProduct(id){
       const p = products.find(x=>x.id===id);
       openBackdrop(`
@@ -638,7 +629,6 @@
     }
 
     function confirmOrder(){
-      // ambil form
       const name = document.getElementById('fName')?.value?.trim();
       const phone = document.getElementById('fPhone')?.value?.trim();
       const address = document.getElementById('fAddress')?.value?.trim();
@@ -649,7 +639,6 @@
         return;
       }
 
-      // buat order sederhana (di sini hanya simulasi)
       const order = {
         id: 'ORD' + Date.now().toString().slice(-6),
         date: new Date().toISOString(),
@@ -658,16 +647,13 @@
         total: cart.reduce((s,i)=>s + i.price * i.qty, 0)
       };
 
-      // simpan riwayat order sederhana ke localStorage
       const history = JSON.parse(localStorage.getItem('blushy_orders') || '[]');
       history.push(order);
       localStorage.setItem('blushy_orders', JSON.stringify(history));
 
-      // kosongkan keranjang
       cart = [];
       saveCart();
 
-      // tampilkan halaman terima kasih
       openBackdrop(`
         <div style="text-align:center">
           <h4>Terima Kasih, ${order.customer.name}!</h4>
@@ -682,7 +668,6 @@
       `);
     }
 
-    /* ======= ORDER HISTORY ======= */
     function viewOrders(){
       const history = JSON.parse(localStorage.getItem('blushy_orders') || '[]').reverse();
       const html = history.length ? history.map(o => `
@@ -709,7 +694,6 @@
       `);
     }
 
-    /* ======= LOGIN / REGISTER (simulasi modal) ======= */
     document.getElementById('btnLogin').addEventListener('click', ()=>{
       openBackdrop(`
         <div>
@@ -747,7 +731,6 @@
     });
 
     function doLogin(){
-      // simulasi login (simpan user sederhana)
       const email = document.getElementById('loginEmail').value;
       const pass = document.getElementById('loginPass').value;
       if(!email || !pass){ showToast('Isi email & kata sandi'); return; }
@@ -765,7 +748,6 @@
       closeBackdrop();
     }
 
-    /* ======= UTIL: Toast ======= */
     function showToast(msg=''){
       const t = document.createElement('div');
       t.innerText = msg;
@@ -782,12 +764,12 @@
       setTimeout(()=>t.remove(), 2100);
     }
 
-    /* ======= NAV ACTIONS ======= */
+
     document.getElementById('openCart').addEventListener('click', openCartModal);
     document.getElementById('navHome').addEventListener('click', ()=> window.scrollTo({top:0, behavior:'smooth'}));
     document.getElementById('navProducts').addEventListener('click', ()=> { document.getElementById('productGrid').scrollIntoView({behavior:'smooth'}); });
 
-    /* utility functions accessible from inline handlers */
+
     window.closeBackdrop = closeBackdrop;
     window.openCheckout = openCheckout;
     window.removeFromCart = removeFromCart;
@@ -796,37 +778,16 @@
     window.viewOrders = viewOrders;
     window.confirmOrder = confirmOrder;
 
-    // render again if localStorage cart changed externally
+
     window.addEventListener('storage', ()=> {
       cart = JSON.parse(localStorage.getItem('blushy_cart') || '[]');
       updateCartCount();
     });
 
-    /* safety: try to load images, else fallback to placeholder */
+  
     document.addEventListener('error', function(e){
       if(e.target.tagName === 'IMG'){
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
