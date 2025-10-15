@@ -15,20 +15,6 @@
         desc: 'Skintific 5X Ceramide Serum Sunscreen hadir sebagai perisai UV tak terlihat yang menjaga kulitmu dari bahaya sinar UVA, UVB, dan Blue Light-tanpa rasa lengket.',
         img: 'image/skin_sunscreen.jpg'
       },
-         {
-    id: 'time-lipstain',
-    name: 'Time Lip Stain',
-    price: 58000,
-    desc: 'Lip stain ringan dengan hasil natural dan warna tahan lama, cocok untuk daily look.',
-    img: 'image/time_lip stain.jpg'
-  },
-          {
-    id: 'pinkflash-lipcream',
-    name: 'Pinkflash Lip Cream',
-    price: 59500,
-    desc: 'Lip cream matte yang creamy dan hadir dengan beragam warna nude.',
-    img: 'image/pinkflash_lip cream.jpg'
-  },
       {
         id: 'moisturizer',
         name: 'Moisturizer Glad 2 Glow',
@@ -50,20 +36,6 @@
         desc: 'Sangat mudah dibaurkan dan dibentuk, meluncur tanpa bobot, sehingga mudah diaplikasikan.',
         img: 'image/luxcrime_contour.jpg'
       },
-     {
-    id: 'time-cushion',
-    name: 'Time Cushion',
-    price: 95000,
-    desc: 'Cushion dengan hasil akhir satin glow yang tahan lama dan ringan di kulit.',
-    img: 'image/time_cushion.jpg'
-  },
-         {
-    id: 'pinkflash-eyeshadow3',
-    name: 'Pinkflash 3 Eyeshadow',
-    price: 48000,
-    desc: 'Palet eyeshadow mini dengan 3 warna intens dan mudah dibaurkan.',
-    img: 'image/pinkflash_3 eyeshadow.jpg'
-  },
       {
         id: 'primer',
         name: 'primer MOP',
@@ -78,13 +50,6 @@
         desc: 'Lipstik cair tahan transfer dengan kilau tinggi, tahan lama, dan hasil akhir berkilau sepanjang hari.',
         img: 'image/luxcrime_lip vinyl.jpg'
       },
-         {
-    id: 'time-contour',
-    name: 'Time Contour',
-    price: 72000,
-    desc: 'Contour dengan tekstur creamy yang mudah dibaurkan, memberikan dimensi natural pada wajah.',
-    img: 'image/time_contour.jpg'
-  },
       {
         id: 'eyeshadow',
         name: 'eyeshadow MOP',
@@ -92,13 +57,6 @@
         desc: 'eyeshadow dari Mother of Pearl dengan 3 shades hadir dengan kombinasi warna yang cantik',
         img: 'image/mop_eyeshadow.jpg'
       },
-         {
-    id: 'pinkflash-lipglaze',
-    name: 'Pinkflash Lip Glaze',
-    price: 56500,
-    desc: 'Lip gloss ringan dengan kilau lembut, memberikan hasil glossy tanpa rasa lengket.',
-    img: 'image/pinkflash_lip glaze.jpg'
-  },
       {
         id: 'moisturizer',
         name: 'Moisturizer Skintific',
@@ -120,13 +78,6 @@
         desc: 'Serum bibir pertama dengan 3 manfaat unggulan: Mencerahkan, Menghaluskan, Meratakan. Perawatan untuk bibir gelap, dua warna, dan kering dalam 1 produk.',
         img: 'image/skin_lip serum.jpg'
       },
-         {
-    id: 'time-lipmatte',
-    name: 'Time Lip Matte',
-    price: 63000,
-    desc: 'Lip matte lembut dengan warna intens dan hasil akhir velvet yang tidak membuat bibir kering.',
-    img: 'image/time_lip matte.jpg'
-         },
       {
         id: 'cushion',
         name: 'Cushion Skintific',
@@ -141,13 +92,6 @@
         desc: 'lip cream matte yang creamy dan hadir dengan beragam warna nude',
         img: 'image/mop_lip cream.jpg'
       },
-         {
-    id: 'pinkflash-bundlingmaskara',
-    name: 'Pinkflash Bundling Maskara',
-    price: 78000,
-    desc: 'Paket bundling maskara waterproof untuk tampilan bulu mata lebih tebal dan lentik.',
-    img: 'image/pinkflash_bundling maskara.jpg'
-  },
       {
         id: 'bedak',
         name: 'Bedak Skintific',
@@ -176,13 +120,6 @@
         desc: 'Cushion dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin. Coverage tinggi yang dapat menutup noda hitam, mata panda, dan skin imperfections dalam 1 kali tap.',
         img: 'image/skin_cushion.jpg'
       },
-         {
-    id: 'time-stellardust',
-    name: 'Time Stellar Dust Lip Stain',
-    price: 64000,
-    desc: 'Lip stain berkilau dengan efek shimmering lembut, memberikan kesan elegan dan mempesona.',
-    img: 'image/time_stellar dust lip stain.jpg'
-  },
       {
         id: 'sunscreen',
         name: 'Sunscreen Luxcrime',
@@ -218,13 +155,6 @@
         desc: 'kunci makeup tahan lama serta segar sepanjang hari',
         img: 'image/sm_settspray.jpg'
       },
-          {
-    id: 'pinkflash-eyeshadow',
-    name: 'Pinkflash Eyeshadow',
-    price: 50500,
-    desc: 'Eyeshadow palette dengan pilihan warna nude dan shimmer, mudah diaplikasikan untuk daily look.',
-    img: 'image/pinkflash_eyeshadow.jpg'
-  }
       {
         id: 'concelear',
         name: 'Concelear Skintific',
@@ -641,6 +571,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
