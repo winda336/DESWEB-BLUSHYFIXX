@@ -253,7 +253,174 @@
         desc: 'Sunscreen 2-in-1 dengan efek mencerahkan ini memberikan perlindungan SPF 50 PA++++ sekaligus memberikan tone up secara instan tanpa meninggalkan white cast.',
         img: 'image/skin_bright sunscreen.jpg'
       },
-
+      {
+        id: 'Serum',
+        name: 'Somethinc Serum',
+        price: 120000,
+        desc: 'Serum pencerah wajah dengan kandungan 2% BHA Salicylid Acid Liquid Profector.',
+        img: 'image/someth_serum.jpeg'
+      },
+      {
+        id: 'Lip Tint',
+        name: 'Lip Tint Dear Me Beauty',
+        price: 45000,
+        desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari.',
+        img: 'image/dearme_lip tint.png'
+      },
+      {
+        id: 'Face Wash',
+        name: 'Face Wash Somethinc',
+        price: 60000,
+        desc: 'Pembersih wajah dengan aroma mint, membantu menyegarkan dan membersihkan kotoran ringan.',
+        img: 'image/someth_cuci muka.png'
+      },
+      {
+        id: 'Sunscreen',
+        name: 'Sunscreen Dear Me Beauty',
+        price: 65000,
+        desc: 'Tabir surya harian yang tidak lengket, memberikan efek glowing natural dan perlindungan kelembapan.',
+        img: 'image/dearme_sunscreen.png'
+      },
+      {
+        id: 'Skintint',
+        name: 'Skintint Rose All Day',
+        price: 85000,
+        desc: 'Skintint berbahan ringan, sehingga tidak membuat makeup berat diwajah.',
+        img: 'image/Skintint Rose All Day.png'
+      },
+      {
+        id: 'Blush On',
+        name: 'Blush On Dear Me Beauty',
+        price: 50000,
+        desc: 'Blush On dalam bentuk cream yang mudah untuk diblend.',
+        img: 'image/dearme_blush on.png'
+      },
+      {
+        id: 'Moisturizer',
+        name: 'Moisturizer Dear Me Beauty',
+        price: 45000,
+        desc: 'Moisturizer berbahan ringan dan cocok untuk digunakan kulit normal',
+        img: 'image/dearme_cream.png'
+      },
+      {
+        id: 'Mascara',
+        name: 'Mascara Rose All Day',
+        price: 65000,
+        desc: 'Mascara yang dapat membuat bulu mata lentik natural',
+        img: 'image/rad_maskara.png'
+      },
+      {
+        id: 'Loose Powder',
+        name: 'Loose Powder Rose All Day',
+        price: 55000,
+        desc: 'Loose Powder ringan yang dapat menahan minyak sehari-hari',
+        img: 'image/rad_bedak.png'
+      },
+      {
+        id: 'Cushion',
+        name: 'Cushion Rose All Day',
+        price: 220000,
+        desc: 'Cushion dengan coverage tinggi',
+        img: 'image/rad_cushion.png'
+      },
+      {
+        id: 'Lip Tint',
+        name: 'Lip Tint Somethinc',
+        price: 85000,
+        desc: 'Lip Tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari',
+        img: 'image/someth_lip tint.jpg'
+      },
+      {
+        id: 'Cushion',
+        name: 'Cushion Somethinc',
+        price: 150000,
+        desc: 'Cuushion dengan bahan ringan yang dapat menahan minyak',
+        img: 'image/someth_cushion.png'
+      },
+      {
+        id: 'Moisturizer',
+        name: 'Moisturizer Somethinc',
+        price: 225000,
+        desc: 'Moisturizer untuk memperkuat skin barrier',
+        img: 'image/someth_mois.png'
+      },
+      {
+        id: 'Concealer',
+        name: 'Concealer Rose All Day',
+        price: '120000',
+        desc: 'Concealer dengan coverage tinggi',
+        img: 'image/rad_concealer rose.png'
+      },
+      {
+        id: 'Foundation',
+        name: 'Foundation Dear Me Beauty',
+        price: 75000,
+        desc: 'Foundation coverage tinggi yang cocok digunakan untuk acara-acara penting',
+        img: 'image/dearme_foundation.png'
+      },
+      {
+        id: 'Body Serum',
+        name: 'Body Serum Gland 2 Glow',
+        price: 79000,
+        desc: 'Body serum yang diformulasikan untuk menutrisi kulit secara mendalam dan membantu mencerahkan tampilan kulit kusam',
+        img: 'image/g2g_body serum.jpg'
+      },
+      {
+        id: 'Cushion',
+        name: 'Cushion Barenbliss',
+        price: 95000,
+        desc: 'Cushion dengan flawless matte yang memberikan coverage tinggi dan tahan lama',
+        img: 'image/barenblis_cushion.jpg'
+      },
+      {
+        id: 'Micellar Water',
+        name: 'Micellar Water Gland 2 Glow',
+        price: 45000,
+        desc: 'Micellar Water pembersih wajah yang mampu mengangkat makeup',
+        img: 'image/g2g_micelar water.jpg'
+      },
+      {
+        id: 'Liptint',
+        name: 'Liptint Barenbliss',
+        price: 55000,
+        desc: 'Liptint Barenbliss dengan tekstur gel ringan dan tahan lama hingga 12 jam',
+        img: 'image/barenblis_liptint.jpg'
+      },
+      {
+        id: 'Milk Amino',
+        name: 'Milk Amino Gland 2 Glow',
+        price: 65000,
+        desc: 'Milk Amino dengan essence berbasis susu untuk menjaga kelembapan kulit',
+        img: 'image/g2g_milk amino.jpg'
+      },
+      { 
+        id: 'Maskara',
+        name: 'Maskara Barenbliss',
+        price: 65000,
+        desc: 'Maskara Barenbliss yang memberikan efek panjang lentik dengan formula tahan air hingga 24 jam',
+        img: 'image/barenblis_maskara.jpg'
+      },
+      {
+        id: 'Power Bright Serum',
+        name: 'Power Bright Serum Gland 2 Glow',
+        price: 89000,
+        desc: 'Power Bright Serum pencerah wajah dengan kandungan vitamin C untuk mengatasi noda hitam dan warna kulit yang tidak merata',
+        img: 'image/g2g_power bright serum.jpg'
+      },
+      {
+        id: 'Blush on',
+        name: 'Blush on Barenbliss',
+        price: 77000,
+        desc: 'Blush on yang memiliki tekstur mochi yang lembut dan creamy tahan lama hingga 12 jam',
+        img: 'image/barenblish_blush on.jpg'
+      },
+      {
+        id: 'Serum',
+        name: 'Serum Gland 2 Glow',
+        price: 75000,
+        desc: 'Serum dengan multifungsi yang membantu menutrisi kulit dan menjaga elastisitas',
+        img: 'image/g2g_serum.jpg'
+      }
     ];
 
     /* ======= HELPERS ======= */
@@ -641,6 +808,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
