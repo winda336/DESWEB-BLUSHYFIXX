@@ -44,13 +44,6 @@
         img: 'image/g2g_retinol moisturizer.jpg'
       },
       {
-        id: 'toner-fresh',
-        name: 'Toner Fresh Balance',
-        price: 85000,
-        desc: 'Toner pH seimbang dengan bahan soothing untuk menenangkan kulit setelah cuci muka.',
-        img: 'https://images.unsplash.com/photo-1580215076047-8a13b5e2d6d6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d'
-      },
-      {
         id: 'micellar water',
         name: 'sea makeup micellar water',
         price: 65000,
@@ -599,6 +592,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
