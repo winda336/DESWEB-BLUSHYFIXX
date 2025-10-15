@@ -258,7 +258,7 @@
         name: 'Somethinc Serum',
         price: 120000,
         desc: 'Serum pencerah wajah dengan kandungan 2% BHA Salicylid Acid Liquid Profector.',
-        img: 'image/someth_serum.jpeg'
+        img: 'image/somth_serum.jpeg'
       },
       {
         id: 'Lip Tint',
@@ -328,7 +328,7 @@
         name: 'Lip Tint Somethinc',
         price: 85000,
         desc: 'Lip Tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari',
-        img: 'image/someth_lip tint.jpg'
+        img: 'image/somth_lip tint.jpg'
       },
       {
         id: 'Cushion',
@@ -808,6 +808,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
