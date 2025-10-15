@@ -2,13 +2,6 @@
      /* ========== DATA PRODUK (gunakan gambar publik dari Unsplash/CDN) ========== */
     const products = [
       {
-        id: 'serum',
-        name: 'Serum Glow Up',
-        price: 120000,
-        desc: 'Serum pencerah wajah dengan vitamin C & ekstrak buah alami. Membuat kulit lebih cerah dan lembap.',
-        img: 'image/somth_serum.jpeg'
-      },
-      {
         id: 'bedak',
         name: 'Bedak Luxcrime',
         price: 61700,
@@ -16,25 +9,11 @@
         img: 'image/luxcrime_bedak.jpg'
       },
       {
-        id: 'lip-tint',
-        name: 'Lip Tint Dear Me',
-        price: 75000,
-        desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari.',
-        img: 'image/dearme_lip tint.png'
-      },
-      {
         id: 'sunscreen',
         name: 'Sunscreen Skintific',
         price: 77520,
         desc: 'Skintific 5X Ceramide Serum Sunscreen hadir sebagai perisai UV tak terlihat yang menjaga kulitmu dari bahaya sinar UVA, UVB, dan Blue Light-tanpa rasa lengket.',
         img: 'image/skin_sunscreen.jpg'
-      },
-      {
-        id: 'face-wash',
-        name: 'Face Wash Somethinc',
-        price: 60000,
-        desc: 'Pembersih wajah dengan aroma mint, membantu menyegarkan dan membersihkan kotoran ringan.',
-        img: 'image/someth_cuci muka.png'
       },
       {
         id: 'moisturizer',
@@ -592,6 +571,7 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
 
 
