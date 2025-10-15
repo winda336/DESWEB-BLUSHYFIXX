@@ -334,7 +334,7 @@
         name: 'Cushion Somethinc',
         price: 150000,
         desc: 'Cuushion dengan bahan ringan yang dapat menahan minyak',
-        img: 'image/someth_cushion.png'
+        img: 'image/someth_cuschion.png'
       },
       {
         id: 'Moisturizer',
@@ -790,4 +790,5 @@
         e.target.src = 'https://via.placeholder.com/400x300.png?text=Image';
       }
     }, true);
+
 
