@@ -784,5 +784,56 @@
       }
     }, true);
 
+    function updateUserUI(){
+      const user = JSON.parse(localStorage.getItem('blushy_user'));
 
+      const authBox = document.querySelector('.auth');
 
+      if(user){
+        authBox.innerHTML = `
+          <span style="font-weight:600;color:#444">Halo, ${user.name || user.email}</span>
+          <button class="btn ghost" onclick="logoutUser()">Logout</button>
+        `;
+      } else {
+        authBox.innerHTML = `
+          <button class="btn ghost" id="btnLogin">Login</button>
+          <button class="btn" id="btnRegister">Daftar</button>
+        `;
+
+        document.getElementById('btnLogin').addEventListener('click', openLoginModal);
+        document.getElementById('btnRegister').addEventListener('click', openRegisterModal);
+      }
+    }
+
+    function logoutUser(){
+      localStorage.removeItem('blushy_user');
+      showToast('Berhasil logout');
+      updateUserUI();
+    }
+
+    function doLogin(){
+      const email = document.getElementById('loginEmail').value;
+      const pass = document.getElementById('loginPass').value;
+      if(!email || !pass){ showToast('Isi email & kata sandi'); return; }
+
+      localStorage.setItem('blushy_user', JSON.stringify({email}));
+
+      showToast('Berhasil login');
+      closeBackdrop();
+      updateUserUI();
+    }
+
+    function doRegister(){
+      const name = document.getElementById('regName').value;
+      const email = document.getElementById('regEmail').value;
+      const pass = document.getElementById('regPass').value;
+      if(!name || !email || !pass){ showToast('Lengkapi form pendaftaran'); return; }
+
+      localStorage.setItem('blushy_user', JSON.stringify({name,email}));
+
+      showToast('Akun berhasil dibuat');
+      closeBackdrop();
+      updateUserUI();
+    }
+
+    updateUserUI();
