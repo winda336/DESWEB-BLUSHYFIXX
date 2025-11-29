@@ -120,13 +120,6 @@
         img: 'image/skin_lip serum.jpg'
       },
       {
-        id: 'cushion-skintific',
-        name: 'Cushion Skintific',
-        price: 169000,
-        desc: 'Cushion dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin. Coverage tinggi yang dapat menutup noda hitam, mata panda, dan skin imperfections dalam 1 kali tap.',
-        img: 'image/skin_cushion.jpg'
-      },
-      {
         id: 'time-lipmatte',
         name: 'Time Lip Matte',
         price: 63000,
