@@ -514,7 +514,7 @@
       closeBackdrop();
     }
 
-    /* ======= CART MODAL ======= */
+    
     function openCartModal(){
       const itemsHTML = cart.map((it, idx) => `
         <div class="cart-item" data-idx="${idx}">
@@ -565,9 +565,9 @@
       openCartModal();
     }
 
-    /* ======= CHECKOUT ======= */
+    
     function openCheckout(){
-      // prefill summary
+    
       const total = cart.reduce((s,i)=>s + i.price * i.qty, 0);
       if(cart.length === 0){
         showToast('Keranjang masih kosong — tambahkan produk dulu');
@@ -812,28 +812,124 @@
     }
 
     function doLogin(){
-      const email = document.getElementById('loginEmail').value;
-      const pass = document.getElementById('loginPass').value;
-      if(!email || !pass){ showToast('Isi email & kata sandi'); return; }
+      const email = document.getElementById('loginEmail').value.trim();
+      const pass = document.getElementById('loginPass').value.trim();
 
-      localStorage.setItem('blushy_user', JSON.stringify({email}));
+      if(!email || !pass){
+        showToast("Isi email dan password");
+        return;
+      }
 
-      showToast('Berhasil login');
+      let users = JSON.parse(localStorage.getItem('blushy_users') || '[]');
+
+      
+      const user = users.find(u => u.email === email && u.pass === pass);
+
+      if(!user){
+        showToast("Email atau password salah / belum terdaftar");
+        return;
+      }
+
+    
+      localStorage.setItem('blushy_user', JSON.stringify(user));
+
+      showToast("Berhasil login!");
       closeBackdrop();
       updateUserUI();
     }
 
+
     function doRegister(){
-      const name = document.getElementById('regName').value;
-      const email = document.getElementById('regEmail').value;
-      const pass = document.getElementById('regPass').value;
-      if(!name || !email || !pass){ showToast('Lengkapi form pendaftaran'); return; }
+      const name = document.getElementById('regName').value.trim();
+      const email = document.getElementById('regEmail').value.trim();
+      const pass = document.getElementById('regPass').value.trim();
 
-      localStorage.setItem('blushy_user', JSON.stringify({name,email}));
+      if(!name || !email || !pass){
+        showToast("Lengkapi semua data pendaftaran");
+        return;
+      }
 
-      showToast('Akun berhasil dibuat');
+      
+      let users = JSON.parse(localStorage.getItem('blushy_users') || '[]');
+
+      
+      if(users.some(u => u.email === email)){
+        showToast("Email sudah terdaftar, gunakan email lain");
+        return;
+      }
+
+      users.push({name, email, pass});
+      localStorage.setItem('blushy_users', JSON.stringify(users));
+
+      showToast("Akun berhasil dibuat!");
       closeBackdrop();
-      updateUserUI();
+    }
+
+    function updateUserUI(){
+      const user = JSON.parse(localStorage.getItem('blushy_user'));
+      const authBox = document.querySelector('.auth');
+
+      if(user){
+        authBox.innerHTML = `
+          <span style="font-weight:600;color:#444">Halo, ${user.name || user.email}</span>
+          <button class="btn ghost" id="btnLogout">Logout</button>
+        `;
+        document.getElementById('btnLogout').addEventListener('click', logoutUser);
+
+      } else {
+        authBox.innerHTML = `
+          <button class="btn ghost" id="btnLogin">Login</button>
+          <button class="btn" id="btnRegister">Daftar</button>
+        `;
+
+        document.getElementById('btnLogin').addEventListener('click', function() {
+          openBackdrop(`
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <h4>Login</h4><span class="close-x" onclick="closeBackdrop()">×</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+                <input id="loginEmail" type="email" placeholder="Email">
+                <input id="loginPass" type="password" placeholder="Kata Sandi">
+                <div style="display:flex;justify-content:flex-end;gap:8px">
+                  <button class="btn ghost" onclick="closeBackdrop()">Batal</button>
+                  <button class="btn" onclick="doLogin()">Masuk</button>
+                </div>
+              </div>
+            </div>
+          `);
+        });
+
+        document.getElementById('btnRegister').addEventListener('click', function() {
+          openBackdrop(`
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <h4>Daftar</h4><span class="close-x" onclick="closeBackdrop()">×</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+                <input id="regName" type="text" placeholder="Nama lengkap">
+                <input id="regEmail" type="email" placeholder="Email">
+                <input id="regPass" type="password" placeholder="Kata Sandi">
+                <div style="display:flex;justify-content:flex-end;gap:8px">
+                  <button class="btn ghost" onclick="closeBackdrop()">Batal</button>
+                  <button class="btn" onclick="doRegister()">Daftar</button>
+                </div>
+              </div>
+            </div>
+          `);
+        });
+      }
+    }
+
+    function openLoginModal(){
+      btnLogin.click(); 
+    }
+
+    function openRegisterModal(){
+      btnRegister.click();
     }
 
     updateUserUI();
+
+
+
