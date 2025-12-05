@@ -453,6 +453,21 @@
     }
     updateCartCount();
 
+let vouchers = {
+  'FIRST20': {
+    name: 'Voucher Pembelian Pertama',
+    discount: 0.20, 
+    minPurchase: 0,
+    used: false,
+    description: 'Diskon 20% untuk pembelian pertama'
+  }
+};
+
+function checkFirstTimeBuyer() {
+  const orders = JSON.parse(localStorage.getItem('blushy_orders') || '[]');
+  return orders.length === 0; 
+}
+
     document.addEventListener('click', (ev) => {
       const addId = ev.target.getAttribute('data-add');
       const detailId = ev.target.getAttribute('data-detail');
@@ -569,100 +584,174 @@
     }
 
     
-    function openCheckout(){
-    
-      const total = cart.reduce((s,i)=>s + i.price * i.qty, 0);
-      if(cart.length === 0){
-        showToast('Keranjang masih kosong — tambahkan produk dulu');
-        return;
-      }
-      const itemsSummary = cart.map(i=>`<li style="margin:6px 0">${i.name} × ${i.qty} — <strong>${formatRupiah(i.price * i.qty)}</strong></li>`).join('');
-      openBackdrop(`
+  function openCheckout(){
+  const total = cart.reduce((s,i)=>s + i.price * i.qty, 0);
+  if(cart.length === 0){
+    showToast('Keranjang masih kosong — tambahkan produk dulu');
+    return;
+  }
+  
+  const isFirstBuyer = checkFirstTimeBuyer();
+  const voucherApplied = localStorage.getItem('voucher_applied') === 'FIRST20';
+  
+  let discount = 0;
+  let finalTotal = total;
+  
+  if(voucherApplied && isFirstBuyer) {
+    discount = total * vouchers['FIRST20'].discount;
+    finalTotal = total - discount;
+  }
+  
+  const itemsSummary = cart.map(i=>`<li style="margin:6px 0">${i.name} × ${i.qty} — <strong>${formatRupiah(i.price * i.qty)}</strong></li>`).join('');
+  
+  const voucherSection = isFirstBuyer ? `
+    <div style="background:#FFF3CD;padding:12px;border-radius:8px;margin:10px 0">
+      <div style="display:flex;justify-content:space-between;align-items:center">
         <div>
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <h4>Checkout</h4><span class="close-x" onclick="closeBackdrop()">×</span>
-          </div>
+          <strong>🎉 Voucher Pembelian Pertama</strong>
+          <p class="small" style="margin:4px 0 0">Diskon 20% untuk pembelian pertamamu!</p>
+        </div>
+        <button class="btn" onclick="applyVoucher('FIRST20')" id="voucherBtn" style="font-size:12px;padding:6px 12px">
+          ${voucherApplied ? '✓ Terpasang' : 'Klaim'}
+        </button>
+      </div>
+    </div>
+  ` : '';
+  
+  openBackdrop(`
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h4>Checkout</h4><span class="close-x" onclick="closeBackdrop()">×</span>
+      </div>
 
-          <div style="display:flex;gap:14px;flex-direction:column;margin-top:8px">
-            <div>
-              <label class="small">Nama Penerima</label>
-              <input type="text" id="fName" placeholder="Nama lengkap">
-            </div>
-            <div>
-              <label class="small">No. HP</label>
-              <input type="text" id="fPhone" placeholder="0812xxxx">
-            </div>
-            <div>
-              <label class="small">Alamat Pengiriman</label>
-              <textarea id="fAddress" placeholder="Contoh: Jl. Merdeka No.10, Jakarta"></textarea>
-            </div>
+      <div style="display:flex;gap:14px;flex-direction:column;margin-top:8px">
+        <div>
+          <label class="small">Nama Penerima</label>
+          <input type="text" id="fName" placeholder="Nama lengkap">
+        </div>
+        <div>
+          <label class="small">No. HP</label>
+          <input type="text" id="fPhone" placeholder="0812xxxx">
+        </div>
+        <div>
+          <label class="small">Alamat Pengiriman</label>
+          <textarea id="fAddress" placeholder="Contoh: Jl. Merdeka No.10, Jakarta"></textarea>
+        </div>
 
-            <div>
-              <label class="small">Metode Pembayaran</label>
-              <select id="fPayment">
-                <option value="bank">Transfer Bank</option>
-                <option value="cod">Bayar di Tempat (COD)</option>
-                <option value="e-wallet">E-Wallet (OVO/GoPay/Dana)</option>
-              </select>
-            </div>
+        <div>
+          <label class="small">Metode Pembayaran</label>
+          <select id="fPayment">
+            <option value="bank">Transfer Bank</option>
+            <option value="cod">Bayar di Tempat (COD)</option>
+            <option value="e-wallet">E-Wallet (OVO/GoPay/Dana)</option>
+          </select>
+        </div>
 
-            <div>
-              <h5 style="margin:10px 0 6px">Ringkasan Pesanan</h5>
-              <ul class="muted">${itemsSummary}</ul>
-              <div class="total-row" style="padding-top:8px">
-                <div>Total yang harus dibayar</div>
-                <div>${formatRupiah(total)}</div>
+        ${voucherSection}
+
+        <div>
+          <h5 style="margin:10px 0 6px">Ringkasan Pesanan</h5>
+          <ul class="muted">${itemsSummary}</ul>
+          <div style="padding-top:8px">
+            <div style="display:flex;justify-content:space-between;padding:4px 0">
+              <div class="muted">Subtotal</div>
+              <div>${formatRupiah(total)}</div>
+            </div>
+            ${voucherApplied && isFirstBuyer ? `
+              <div style="display:flex;justify-content:space-between;padding:4px 0;color:#28a745">
+                <div>Diskon Voucher (20%)</div>
+                <div>- ${formatRupiah(discount)}</div>
               </div>
-            </div>
-
-            <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
-              <button class="btn ghost" onclick="closeBackdrop()">Kembali</button>
-              <button class="btn" onclick="confirmOrder()">Konfirmasi & Bayar</button>
+            ` : ''}
+            <div class="total-row" style="padding-top:8px;border-top:1px solid #eee">
+              <div>Total yang harus dibayar</div>
+              <div>${formatRupiah(finalTotal)}</div>
             </div>
           </div>
         </div>
-      `);
-    }
 
-    function confirmOrder(){
-      const name = document.getElementById('fName')?.value?.trim();
-      const phone = document.getElementById('fPhone')?.value?.trim();
-      const address = document.getElementById('fAddress')?.value?.trim();
-      const payment = document.getElementById('fPayment')?.value;
-
-      if(!name || !phone || !address){
-        showToast('Isi nama, no. HP, dan alamat terlebih dahulu');
-        return;
-      }
-
-      const order = {
-        id: 'ORD' + Date.now().toString().slice(-6),
-        date: new Date().toISOString(),
-        customer: {name, phone, address, payment},
-        items: cart,
-        total: cart.reduce((s,i)=>s + i.price * i.qty, 0)
-      };
-
-      const history = JSON.parse(localStorage.getItem('blushy_orders') || '[]');
-      history.push(order);
-      localStorage.setItem('blushy_orders', JSON.stringify(history));
-
-      cart = [];
-      saveCart();
-
-      openBackdrop(`
-        <div style="text-align:center">
-          <h4>Terima Kasih, ${order.customer.name}!</h4>
-          <p class="muted">Pesananmu sudah kami terima. ID Pesanan <strong>${order.id}</strong></p>
-          <p class="muted">Total: <strong>${formatRupiah(order.total)}</strong></p>
-          <p class="muted">Metode: <strong>${order.customer.payment}</strong></p>
-          <div style="margin-top:12px;display:flex;gap:8px;justify-content:center">
-            <button class="btn" onclick="closeBackdrop()">Tutup</button>
-            <button class="btn ghost" onclick="viewOrders()">Lihat Riwayat Pesanan</button>
-          </div>
+        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
+          <button class="btn ghost" onclick="closeBackdrop()">Kembali</button>
+          <button class="btn" onclick="confirmOrder()">Konfirmasi & Bayar</button>
         </div>
-      `);
-    }
+      </div>
+    </div>
+  `);
+}
+function applyVoucher(code) {
+  const isFirstBuyer = checkFirstTimeBuyer();
+  
+  if(!isFirstBuyer) {
+    showToast('Voucher ini hanya untuk pembelian pertama');
+    return;
+  }
+  
+  if(vouchers[code] && !vouchers[code].used) {
+    localStorage.setItem('voucher_applied', code);
+    showToast('✓ Voucher berhasil diterapkan!');
+    openCheckout(); 
+  }
+}
+
+window.applyVoucher = applyVoucher;
+
+   function confirmOrder(){
+  const name = document.getElementById('fName')?.value?.trim();
+  const phone = document.getElementById('fPhone')?.value?.trim();
+  const address = document.getElementById('fAddress')?.value?.trim();
+  const payment = document.getElementById('fPayment')?.value;
+
+  if(!name || !phone || !address){
+    showToast('Isi nama, no. HP, dan alamat terlebih dahulu');
+    return;
+  }
+
+  const isFirstBuyer = checkFirstTimeBuyer();
+  const voucherApplied = localStorage.getItem('voucher_applied') === 'FIRST20';
+  
+  let subtotal = cart.reduce((s,i)=>s + i.price * i.qty, 0);
+  let discount = 0;
+  let finalTotal = subtotal;
+  
+  if(voucherApplied && isFirstBuyer) {
+    discount = subtotal * vouchers['FIRST20'].discount;
+    finalTotal = subtotal - discount;
+    vouchers['FIRST20'].used = true;
+    localStorage.removeItem('voucher_applied'); // hapus setelah digunakan
+  }
+
+  const order = {
+    id: 'ORD' + Date.now().toString().slice(-6),
+    date: new Date().toISOString(),
+    customer: {name, phone, address, payment},
+    items: cart,
+    subtotal: subtotal,
+    discount: discount,
+    total: finalTotal,
+    voucherUsed: voucherApplied ? 'FIRST20' : null
+  };
+
+  const history = JSON.parse(localStorage.getItem('blushy_orders') || '[]');
+  history.push(order);
+  localStorage.setItem('blushy_orders', JSON.stringify(history));
+
+  cart = [];
+  saveCart();
+
+  openBackdrop(`
+    <div style="text-align:center">
+      <h4>Terima Kasih, ${order.customer.name}!</h4>
+      <p class="muted">Pesananmu sudah kami terima. ID Pesanan <strong>${order.id}</strong></p>
+      ${discount > 0 ? `<p style="color:#28a745;font-weight:600">🎉 Kamu hemat ${formatRupiah(discount)} dengan voucher!</p>` : ''}
+      <p class="muted">Total: <strong>${formatRupiah(order.total)}</strong></p>
+      <p class="muted">Metode: <strong>${order.customer.payment}</strong></p>
+      <div style="margin-top:12px;display:flex;gap:8px;justify-content:center">
+        <button class="btn" onclick="closeBackdrop()">Tutup</button>
+        <button class="btn ghost" onclick="viewOrders()">Lihat Riwayat Pesanan</button>
+      </div>
+    </div>
+  `);
+}
 
     function viewOrders(){
       const history = JSON.parse(localStorage.getItem('blushy_orders') || '[]').reverse();
@@ -933,6 +1022,7 @@
     }
 
     updateUserUI();
+
 
 
 
