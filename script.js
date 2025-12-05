@@ -693,6 +693,50 @@ function applyVoucher(code) {
   }
 }
 
+function openVoucherInfo() {
+  const isFirstBuyer = checkFirstTimeBuyer();
+  const voucherApplied = localStorage.getItem('voucher_applied') === 'FIRST20';
+  
+  if(!isFirstBuyer) {
+    openBackdrop(`
+      <div style="text-align:center">
+        <h4>🎟️ Voucher Pembelian Pertama</h4>
+        <img src="image/voucher_desweb.png" style="width:100%;max-width:300px;border-radius:12px;margin:16px 0">
+        <p class="muted">Maaf, voucher ini hanya untuk pembeli pertama kali.</p>
+        <p style="color:#666;font-size:14px">Kamu sudah pernah berbelanja sebelumnya 😊</p>
+        <button class="btn" onclick="closeBackdrop()" style="margin-top:12px">Tutup</button>
+      </div>
+    `);
+    return;
+  }
+  
+  openBackdrop(`
+    <div style="text-align:center">
+      <h4>🎉 Voucher Pembelian Pertama</h4>
+      <img src="image/voucher_desweb.png" style="width:100%;max-width:300px;border-radius:12px;margin:16px 0">
+      <div style="background:#FFF3CD;padding:14px;border-radius:10px;margin:12px 0;text-align:left">
+        <p style="margin:0;font-weight:600;color:#333">📌 Detail Voucher:</p>
+        <ul style="margin:8px 0;padding-left:20px;color:#666">
+          <li>Diskon <strong>20%</strong> untuk total belanja</li>
+          <li>Berlaku untuk pembelian pertama</li>
+          <li>Tidak ada minimum pembelian</li>
+          <li>Voucher otomatis tersedia saat checkout</li>
+        </ul>
+      </div>
+      ${voucherApplied ? 
+        '<p style="color:#28a745;font-weight:600">✓ Voucher sudah aktif di keranjangmu!</p>' : 
+        '<p class="muted">Voucher akan muncul otomatis saat kamu checkout 🛒</p>'
+      }
+      <div style="display:flex;gap:8px;justify-content:center;margin-top:16px">
+        <button class="btn ghost" onclick="closeBackdrop()">Tutup</button>
+        <button class="btn" onclick="closeBackdrop(); document.getElementById('navProducts').click()">Belanja Sekarang</button>
+      </div>
+    </div>
+  `);
+}
+
+window.openVoucherInfo = openVoucherInfo;
+
 window.applyVoucher = applyVoucher;
 
    function confirmOrder(){
@@ -1022,6 +1066,7 @@ window.applyVoucher = applyVoucher;
     }
 
     updateUserUI();
+
 
 
 
