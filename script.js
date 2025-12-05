@@ -434,6 +434,9 @@
           <div class="price">${formatRupiah(p.price)}</div>
           <div class="actions">
             <button class="btn" data-add="${p.id}">Tambah ke Keranjang</button>
+            <button class="btn cart-icon-btn" data-add="${p.id}">
+              <img src="image/keranjang.jpg" alt="cart">
+            </button>
             <button class="btn ghost" data-detail="${p.id}">Lihat</button>
           </div>
         `;
@@ -930,6 +933,7 @@
     }
 
     updateUserUI();
+
 
 
 
