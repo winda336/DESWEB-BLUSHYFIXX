@@ -433,7 +433,7 @@
           <p class="small">${p.desc}</p>
           <div class="price">${formatRupiah(p.price)}</div>
           <div class="actions">
-            <button class="btn" data-add="${p.id}">Tambah ke Keranjang</button>
+            <button class="btn add-cart" data-add="${p.id}">Tambah ke Keranjang</button>
             <button class="btn cart-icon-btn" data-add="${p.id}">
               <img src="image/keranjang.jpg" alt="cart">
             </button>
@@ -933,6 +933,7 @@
     }
 
     updateUserUI();
+
 
 
 
