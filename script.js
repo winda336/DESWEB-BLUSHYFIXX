@@ -4,7 +4,7 @@
         id: 'bedak-luxcrime',
         name: 'Bedak Luxcrime',
         price: 61700,
-        desc: 'Bedak ringan dan ultra-halus ini menyerap minyak berlebih dan mengecilkan pori-pori tanpa terlihat menggumpal.',
+        desc: 'Bedak ringan yang menyerap minyak berlebih dan mengecilkan pori-pori tanpa terlihat menggumpal.',
         img: 'image/luxcrime_bedak.jpg'
       },
       {
@@ -18,7 +18,7 @@
         id: 'sunscreen-skintific',
         name: 'Sunscreen Skintific',
         price: 77520,
-        desc: 'Skintific 5X Ceramide Serum Sunscreen hadir sebagai perisai UV tak terlihat yang menjaga kulitmu dari bahaya sinar UVA, UVB, dan Blue Light-tanpa rasa lengket.',
+        desc: 'Sebagai perisai UV yang menjaga kulitmu dari bahaya sinar UVA, UVB, dan Blue Light-tanpa rasa lengket.',
         img: 'image/skin_sunscreen.jpg'
       },
       {
@@ -39,7 +39,7 @@
         id: 'micellar water-seamakeup',
         name: 'sea makeup micellar water',
         price: 65000,
-        desc: 'membantu menghapus makeup secara mudah dan menyeluruh',
+        desc: 'Membantu menghapus makeup secara mudah dan menyeluruh',
         img : 'image/sm_micellar_water.jpg'
       },
       {
@@ -60,7 +60,7 @@
         id: 'prime-mop',
         name: 'primer MOP',
         price: 170000,
-        desc: 'primer dengan formula yang dapat melembabkan, mengencangkan, dan meminimalkan tampilan pori-pori di wajah',
+        desc: 'Primer dengan formula yang dapat melembabkan, mengencangkan, dan meminimalkan tampilan pori-pori di wajah',
         img: 'image/mop_primer.jpg'
       },
       {
@@ -74,14 +74,14 @@
         id: 'lip-vinyl-luxcrime',
         name: 'Lip Vinyl Luxcrime',
         price: 76820,
-        desc: 'Lipstik cair tahan transfer dengan kilau tinggi, tahan lama, dan hasil akhir berkilau sepanjang hari.',
+        desc: 'Lipstik tahan transfer dengan kilau tinggi, tahan lama.',
         img: 'image/luxcrime_lip_vinyl.jpg'
       },
       {
         id: 'eyeshadow-mop',
         name: 'eyeshadow MOP',
         price: 200000,
-        desc: 'eyeshadow dari Mother of Pearl dengan 3 shades hadir dengan kombinasi warna yang cantik',
+        desc: 'Palet eyeshadow 3 shades dengan kombinasi warna yang cantik',
         img: 'image/mop_eyeshadow.jpg'
       },
       {
@@ -102,7 +102,7 @@
         id: 'foundation-mop',
         name: 'foundation MOP',
         price: 170500,
-        desc: 'hybrid matte foundation dengan formula baru dan kemasan airless pump dengan coverage super tinggi',
+        desc: 'Hybrid matte foundation dengan coverage super tinggi',
         img: 'image/mop_foundat.jpg'
       },
       {
@@ -116,7 +116,7 @@
         id: 'lip-serum-skintific',
         name: 'Lip Serum Skintific',
         price: 116000,
-        desc: 'Serum bibir pertama dengan 3 manfaat unggulan: Mencerahkan, Menghaluskan, Meratakan. Perawatan untuk bibir gelap, dua warna, dan kering dalam 1 produk.',
+        desc: 'Dapat mencerahkan, menghaluskan, meratakan dan perawatan untuk bibir gelap,.',
         img: 'image/skin_lip_serum.jpg'
       },
       {
@@ -130,14 +130,14 @@
         id: 'lip cream-mop',
         name: 'lip cream MOP',
         price: 59500,
-        desc: 'lip cream matte yang creamy dan hadir dengan beragam warna nude',
+        desc: 'lip cream matte yang creamy dan hadir dengan warna nude.',
         img: 'image/mop_lip_cream.jpg'
       },
       {
         id: 'bedak-skintific',
         name: 'Bedak Skintific',
         price: 149000,
-        desc: 'Bedak Tabur Invisiblur All Day dengan hasil akhir matte instan, sempurna, dan bebas kilap. Dengan teknologi polimer soft-focus, tampil percaya diri dari siang hingga malam dengan riasan tahan lama 12 jam.',
+        desc: 'Bedak Tabur Invisiblur All Day dengan hasil akhir matte instan, sempurna, dan bebas kilap.',
         img: 'image/skin_bedak.jpg'
       },
       {
@@ -151,14 +151,14 @@
         id: 'wipes-luxcrime',
         name: 'Wipes Luxcrime',
         price: 47500,
-        desc: 'Tisu pembersih siap pakai yang dengan lembut dan efektif menghapus riasan tanpa membuat kulit kering atau membutuhkan air.',
+        desc: 'Tisu penghapus riasan tanpa membuat kulit kering atau membutuhkan air.',
         img: 'image/luxcrime_wipes.jpg'
       },
       {
         id: 'loose powder-mop',
         name: 'loose powder MOP',
         price: 150000,
-        desc: 'microblur translucent loose powder untuk kunci makeup dan samarkan pori-pori',
+        desc: 'Microblur translucent loose powder untuk kunci makeup dan samarkan pori-pori',
         img: 'image/mop_loose_powder.jpg'
       },
       {
@@ -172,21 +172,21 @@
         id: 'cushion-skintific',
         name: 'Cushion Skintific',
         price: 169000,
-        desc: 'Cushion dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin. Coverage tinggi yang dapat menutup noda hitam, mata panda, dan skin imperfections dalam 1 kali tap.',
+        desc: 'Cushion dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin.',
         img: 'image/skin_cushion.jpg'
       },
       {
         id: 'sunscreen-luxcrime',
         name: 'Sunscreen Luxcrime',
         price: 68500,
-        desc: 'Tabir surya ultra-halus dan ringan dengan SPF50+ untuk menyegarkan penampilan Anda dan mengaplikasikan kembali perlindungan UV Anda sepanjang hari.',
+        desc: 'Tabir surya ultra-halus dan ringan dengan SPF50+ untuk perlindungan UV Anda sepanjang hari.',
         img: 'image/luxcrime_sunscreen.jpg'
       },
       {
         id: 'lip balm-seamakeup',
         name: 'sea makeup lip balm',
         price: 53800,
-        desc: 'tinted lip balm dengan warna yang vibrant dan strong glossy effect',
+        desc: 'Tinted lip balm dengan warna yang vibrant dan strong glossy effect',
         img: 'image/sm_lipbalm.jpg'
       },
       {
@@ -200,21 +200,21 @@
         id: 'loose powder-seamakeup',
         name: 'sea makeup loose powder',
         price: 78000,
-        desc: 'dilengkapi dengan puff yang lembut, dapat menyamarkan pori-pori dan awet sepanjang hari',
+        desc: 'Dapat menyamarkan pori-pori dan awet sepanjang hari',
         img: 'image/sm_loose_powder.jpg'
       },
       {
         id: 'skin tint-luxcrime',
         name: 'Skin Tint Luxcrime',
         price: 125150,
-        desc: 'Skin Tint yang ringan dengan coverage yang dapat dibangun yang memberikan cahaya dan warna kulit yang lebih merata dan tampak sehat, sekaligus menghidrasi dan melindungi kulit dari sinar matahari.',
+        desc: 'Skin Tint yang ringan dengan coverage tinggi, sekaligus menghidrasi dan melindungi kulit dari sinar matahari.',
         img: 'image/luxcrime_skin_tint.jpg'
       },
       {
         id: 'setting spray-seamakeup',
         name: 'sea makeup setting spray',
         price: 120000,
-        desc: 'kunci makeup tahan lama serta segar sepanjang hari',
+        desc: 'Kunci makeup tahan lama serta segar sepanjang hari',
         img: 'image/sm_settspray.jpg'
       },
       {
@@ -228,21 +228,21 @@
         id: 'blush on-seamakeup',
         name: 'sea makeup vibrant flushed liquid blush',
         price: 70000,
-        desc: 'blush on cair yang diformulasikan khusus untuk kulit berjerawat',
+        desc: 'Blush on cair yang diformulasikan khusus untuk kulit berjerawat',
         img: 'image/sm_blush.jpg'
       },
       {
         id: 'lip-velvet-luxcrime',
         name: 'Lip velvet Luxcrime',
         price: 63000,
-        desc: 'Teksturnya yang lembut dan halus saat diaplikasikan, meninggalkan rasa lembut dan halus seperti beludru untuk kenyamanan pemakaian. Diperkaya dengan Vitamin E, Minyak Jojoba, dan Squalene untuk menjaga bibir tetap lembut.',
+        desc: 'Teksturnya yang lembut dan halus saat diaplikasikan, meninggalkan rasa lembut dan halus.',
         img: 'image/luxcrime_lip_velvet.jpg'
       },
       {
         id: 'sunscreen-skintific2',
         name: 'Bright Sunscreen Skintific',
         price: 71091,
-        desc: 'Sunscreen 2-in-1 dengan efek mencerahkan ini memberikan perlindungan SPF 50 PA++++ sekaligus memberikan tone up secara instan tanpa meninggalkan white cast.',
+        desc: 'Sunscreen 2-in-1 dengan memberikan perlindungan SPF 50 PA++++ sekaligus one up secara instan tanpa meninggalkan white cast.',
         img: 'image/skin_bright_sunscreen.jpg'
       },
       {
@@ -312,7 +312,7 @@
         id: 'Cushion-RAD',
         name: 'Cushion Rose All Day',
         price: 220000,
-        desc: 'Cushion dengan coverage tinggi',
+        desc: 'Cushion dengan coverage tinggi yang cocok untuk sehari-hari',
         img: 'image/rad_cushion.png'
       },
       {
@@ -326,7 +326,7 @@
         id: 'Cushion-somethinc',
         name: 'Cushion Somethinc',
         price: 150000,
-        desc: 'Cuushion dengan bahan ringan yang dapat menahan minyak',
+        desc: 'Cuushion dengan berbahan ringan yang dapat menahan minyak',
         img: 'image/someth_cuschion.png'
       },
       {
@@ -340,7 +340,7 @@
         id: 'Concealer-RAD',
         name: 'Concealer Rose All Day',
         price: '120000',
-        desc: 'Concealer dengan coverage tinggi',
+        desc: 'Concealer dengan coverage tinggi dapat menutupi noda-noda diwajah',
         img: 'image/rad_concealer_rose.png'
       },
       {
@@ -396,7 +396,7 @@
         id: 'Power Bright Serum-glad2glow',
         name: 'Power Bright Serum Glad 2 Glow',
         price: 89000,
-        desc: 'Power Bright Serum pencerah wajah dengan kandungan vitamin C untuk mengatasi noda hitam dan warna kulit yang tidak merata',
+        desc: 'Serum dengan kandungan vitamin C untuk mengatasi noda hitam dan warna kulit yang tidak merata',
         img: 'image/g2g_power_bright_serum.jpg'
       },
       {
@@ -930,6 +930,7 @@
     }
 
     updateUserUI();
+
 
 
 
