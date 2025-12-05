@@ -42,9 +42,13 @@
         </div>
       </div>
 
-      <div style="width:300px">
-        <img style="width:100%;border-radius:14px;box-shadow:var(--card-shadow)" src="image/voucher_desweb.png" alt="promo">
-      </div>
+    <div style="width:300px;cursor:pointer" onclick="openVoucherInfo()">
+  <img style="width:100%;border-radius:14px;box-shadow:var(--card-shadow);transition:transform 0.2s" 
+       src="image/voucher_desweb.png" alt="promo"
+       onmouseover="this.style.transform='scale(1.05)'"
+       onmouseout="this.style.transform='scale(1)'">
+  <p style="text-align:center;font-size:12px;color:#666;margin-top:8px">🎁 Klik untuk info voucher</p>
+</div>
     </section>
 
     <section class="products" id="productGrid">
@@ -64,6 +68,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
