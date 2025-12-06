@@ -14,21 +14,17 @@
     </div>
 
     <nav>
-      <ul style="display:flex;align-items:center;gap:14px">
+      <ul>
         <li><a id="navHome">Beranda</a></li>
         <li><a id="navProducts">Produk</a></li>
 
-        <!-- KERANJANG diubah — hanya ikon tanpa tulisan -->
+        <!-- Keranjang (teks di desktop, icon di HP) -->
         <li>
-          <a id="openCart" style="display:flex;align-items:center;gap:6px;">
-            <img src="image/cart.png" alt="cart" style="width:22px;height:22px;">
-            <span id="cartCount" style="background:var(--bright-pink);color:#fff;padding:2px 7px;border-radius:9999px;font-size:12px;">
-              0
-            </span>
+          <a id="openCart" class="cart-link">
+            <span class="cart-text">Keranjang</span> 🛒
+            <span id="cartCount" class="badge">0</span>
           </a>
         </li>
-
-        <!-- PROMO DIHAPUS -->
       </ul>
     </nav>
 
@@ -41,25 +37,11 @@
   <main class="container">
     <section class="hero">
       <div class="left">
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <div>
-            <h2>Flash Sale Hari Ini — Diskon sampai 50%</h2>
-            <p class="muted">Produk terbaik untuk perawatan kulitmu. Gratis ongkir untuk pesanan tertentu.</p>
-          </div>
-          <div class="promo">Hemat Sekarang</div>
-        </div>
-
-        <div style="margin-top:14px" class="search">
+        <h2>Flash Sale Hari Ini — Diskon sampai 50%</h2>
+        <p class="muted">Produk terbaik untuk perawatan kulitmu. Gratis ongkir untuk pesanan tertentu.</p>
+        <div class="search">
           <input id="searchInput" placeholder="Cari produk, misal: serum, lip tint, face wash..." />
         </div>
-      </div>
-
-      <div style="width:300px;cursor:pointer" onclick="openVoucherInfo()">
-        <img style="width:100%;border-radius:14px;box-shadow:var(--card-shadow);transition:transform 0.2s" 
-             src="image/voucher_desweb.png" alt="promo"
-             onmouseover="this.style.transform='scale(1.05)'"
-             onmouseout="this.style.transform='scale(1)'">
-        <p style="text-align:center;font-size:12px;color:#666;margin-top:8px"></p>
       </div>
     </section>
 
