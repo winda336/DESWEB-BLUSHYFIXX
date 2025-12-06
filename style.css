@@ -496,53 +496,59 @@ textarea {
     display: inline-block;
   }
 }
-
 @media (max-width: 600px) {
+
   header {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 8px;
+    flex-direction: row;       
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
   }
-  .menu-wrapper {
+
+  .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 14px;
-    width: 100%;
+    gap: 6px;
+  }
+
+  .logo img {
+    width: 36px;                    
+    height: auto;
+  }
+
+  .logo h1 {
+    font-size: 20px;
   }
 
   nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 14px;
-    margin: 0;
+    justify-content: flex-end;
+    gap: 10px;
     padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
   }
 
   nav ul li {
     list-style: none;
-  }
-  .cart-text {
-    display: none;
+    white-space: nowrap;
   }
 
   .cart-link {
     font-size: 20px;
     padding: 0;
   }
-  .auth {
-    display: flex;
-    flex-direction: row;
-    gap: 14px;
-    align-items: center;
-    margin: 0;
+
+  .login-small,
+  .register-small {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
     padding: 0;
-  }
-  .cart-mobile-btn {
-    display: none !important;
   }
 }
