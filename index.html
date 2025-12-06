@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Keranjang</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .btn-keranjang {
-            background: green;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-keranjang span.emoji {
-            display: none; 
-        }
-        @media screen and (max-width: 600px) {
-            .btn-keranjang span.text {
-                display: none; 
-            }
-
-            .btn-keranjang span.emoji {
-                display: inline; 
-                font-size: 22px;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blushy — Toko Kecantikan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <header>
+    <div class="logo">
+      <img src="image/blushy_transparan.png" alt="logo">
+      <h1>Blushy</h1>
+    </div>
 
-    <h2>Contoh Tombol Keranjang Responsive</h2>
+    <nav>
+      <ul>
+        <li><a id="navHome">Beranda</a></li>
+        <li><a id="navProducts">Produk</a></li>
 
-    <!-- Tombol yang berubah sesuai ukuran layar -->
-    <button class="btn-keranjang">
-        <span class="text">Keranjang</span>
-        <span class="emoji">🛒</span>
-    </button>
+        <li>
+          <a id="openCart" class="cart-link">
+            <span class="cart-text">Keranjang</span> 🛒
+            <span id="cartCount" class="badge">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
+    <div class="auth">
+      <button class="btn ghost" id="btnLogin">Login</button>
+      <button class="btn" id="btnRegister">Daftar</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== HERO FIX 2 KOLOM ===== -->
+    <section class="hero">
+
+      <!-- KOLOM KIRI -->
+      <div class="left">
+        <h2>Flash Sale Hari Ini — Diskon sampai 50%</h2>
+        <p class="muted">Produk terbaik untuk perawatan kulitmu. Gratis ongkir untuk pesanan tertentu.</p>
+
+        <div class="search">
+          <input id="searchInput" placeholder="Cari produk, misal: serum, lip tint, face wash..." />
+        </div>
+      </div>
+
+      <!-- KOLOM KANAN (Tambahkan gambar promo seperti screenshot) -->
+      <div style="width:300px">
+        <img src="image/voucher.png" alt="Voucher Promo" style="
+          width:100%;
+          border-radius:16px;
+          box-shadow: var(--card-shadow);
+        ">
+      </div>
+
+    </section>
+    <!-- ===== END HERO ===== -->
+
+    <section class="products" id="productGrid"></section>
+  </main>
+
+  <footer>
+    © 2025 Blushy • Toko Kecantikan Online — Made with ❤️
+  </footer>
+
+  <!-- MODAL -->
+  <div id="backdrop" class="modal-backdrop center" style="display:none">
+    <div class="modal" role="dialog" aria-modal="true" id="modalBox"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
