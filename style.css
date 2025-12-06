@@ -242,6 +242,7 @@ textarea{min-height:80px;resize:vertical}
 }
 .card .actions {
   margin-top: 0;
+  padding-bottom: 6px;
 }
 .card img {
   width: 100%;
@@ -249,5 +250,6 @@ textarea{min-height:80px;resize:vertical}
   object-fit: cover;
   border-radius: 10px;
 }
+
 
 
