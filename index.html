@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blushy — Toko Kecantikan</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
@@ -20,23 +19,20 @@
       <li><a id="navProducts">Produk</a></li>
       <li>
         <a id="openCart" class="cart-link">
-          <span class="nav-cart-text">Keranjang</span>   
-          <span class="nav-cart-emoji">🛒</span>         
+          <span class="nav-cart-text">Keranjang</span>
+          🛒
           <span id="cartCount" class="badge">0</span>
         </a>
       </li>
     </ul>
   </nav>
-  <div class="auth desktop-auth">
+  <div class="auth">
     <button class="btn ghost" id="btnLogin">Login</button>
     <button class="btn" id="btnRegister">Daftar</button>
   </div>
-  <div class="mobile-auth">
-    <button class="btn ghost" id="btnLoginMobile">Login</button>
-    <button class="btn" id="btnRegisterMobile">Daftar</button>
-  </div>
 
 </header>
+
 <main class="container">
 
   <section class="hero">
@@ -57,8 +53,9 @@
   <section class="products" id="productGrid"></section>
 
 </main>
+
 <footer>
-  © 2025 Blushy • Toko Kecantikan Online — Made with ❤️
+  © 2025 Blushy • Toko Kecantikan Online— Made with ❤️
 </footer>
 <div id="backdrop" class="modal-backdrop center" style="display:none">
   <div class="modal" role="dialog" aria-modal="true" id="modalBox"></div>
