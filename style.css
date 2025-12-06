@@ -80,8 +80,10 @@ nav a:hover {
 }
 
 .auth {
-  display: none !important;
+  display: flex;
+  gap: 10px;
 }
+
 .nav-cart-emoji {
   font-size: 20px;
 }
@@ -360,7 +362,6 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-
 @media (max-width: 700px) {
   .hero {
     flex-direction: column;
@@ -371,7 +372,7 @@ textarea {
   .card img {
     height: 160px;
   }
-}
+} /* <-- INI WAJIB ADA */
 
 @media (max-width: 900px) {
   header {
@@ -380,10 +381,18 @@ textarea {
   }
   nav ul {
     gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .logo img {
+    width: 38px;
+    height: 38px;
+  }
+  .logo h1 {
+    font-size: 18px;
   }
   .hero {
     flex-direction: column;
-    text-align: center;
   }
   .hero .left {
     width: 100%;
@@ -398,48 +407,6 @@ textarea {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 }
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-  nav ul {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .logo img {
-    width: 38px;
-    height: 38px;
-  }
-  .logo h1 {
-    font-size: 18px;
-  }
-  .card img {
-    height: 150px;
-  }
-  .card {
-    padding: 10px;
-  }
-  .products {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 14px;
-  }
-  .modal {
-    width: 95%;
-    padding: 14px;
-  }
-  input, textarea, select {
-    font-size: 14px;
-    padding: 10px;
-  }
-  .actions .btn {
-    padding: 6px 10px;
-    font-size: 13px;
-  }
-}
-
 @media (max-width: 420px) {
   .products {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -459,14 +426,6 @@ textarea {
   }
   .modal h4 {
     font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .btn.add-cart-img {
-    padding: 0;
-    background: transparent;
-    border: none;
   }
   .btn.add-cart-img img {
     width: 26px;
@@ -488,18 +447,6 @@ textarea {
   height: 20px !important;
   object-fit: contain;
 }
-@media (max-width: 600px) {
-  .add-cart {
-    display: none;
-  }
-  .cart-icon-btn {
-    display: inline-block;
-  }
-}
-.nav-cart-text {
-  display: inline;
-}
-
 .nav-cart-emoji {
   display: none;
 }
@@ -510,5 +457,20 @@ textarea {
   
   .nav-cart-emoji {
     display: inline;
+  }
+}
+.desktop-auth {
+  display: flex;
+}
+
+.mobile-auth {
+  display: none;
+}
+@media (max-width: 768px) {
+  .desktop-auth {
+    display: none;
+  }
+  .mobile-auth {
+    display: block;
   }
 }
