@@ -642,7 +642,7 @@ function checkFirstTimeBuyer() {
         <div>
           <label class="small">Alamat Pengiriman</label>
           <textarea id="fAddress" placeholder="Contoh: Jl. Merdeka No.10, Jakarta"></textarea>
-        </div>
+      </div>
 
         <div>
           <label class="small">Metode Pembayaran</label>
@@ -653,6 +653,18 @@ function checkFirstTimeBuyer() {
           </select>
         </div>
 
+        <div id="bankOptions" style="display:none; margin-top:8px;">
+          <label class="small">Pilih Bank</label>
+          <select id="fBank" class= "bank-select">
+            <option value="bri" data-logo="image/BRI.png">Bank BRI</option>
+            <option value="bni" data-logo="image/BNI.png">Bank BNI</option>
+            <option value="bca" data-logo="image/BCA.png">Bank BCA</option>
+            <option value="mandiri" data-logo="image/mandiri.png">Bank Mandiri</option>
+            <option value="lainnya">Bank Lainnya</option>
+          </select>
+        </div>
+    </div>
+    
         ${voucherSection}
 
         <div>
@@ -683,6 +695,15 @@ function checkFirstTimeBuyer() {
       </div>
     </div>
   `);
+  document.getElementById('fPayment').addEventListener('change', function () {
+    const bankBox = document.getElementById('bankOptions');
+    if (this.value === 'bank') {
+      bankBox.style.display = 'block';
+    } else {
+      bankBox.style.display = 'none';
+    }
+  });
+
 }
 function applyVoucher(code) {
   const isFirstBuyer = checkFirstTimeBuyer();
@@ -750,6 +771,10 @@ window.applyVoucher = applyVoucher;
   const phone = document.getElementById('fPhone')?.value?.trim();
   const address = document.getElementById('fAddress')?.value?.trim();
   const payment = document.getElementById('fPayment')?.value;
+  let selectedBank = '';
+  if (payment == 'bank') {
+    selectedBank = document.getElementById('fBank')?.value || ''; 
+  }
 
   if(!name || !phone || !address){
     showToast('Isi nama, no. HP, dan alamat terlebih dahulu');
@@ -767,13 +792,13 @@ window.applyVoucher = applyVoucher;
     discount = subtotal * vouchers['FIRST20'].discount;
     finalTotal = subtotal - discount;
     vouchers['FIRST20'].used = true;
-    localStorage.removeItem('voucher_applied'); // hapus setelah digunakan
+    localStorage.removeItem('voucher_applied'); 
   }
 
   const order = {
     id: 'ORD' + Date.now().toString().slice(-6),
     date: new Date().toISOString(),
-    customer: {name, phone, address, payment},
+    customer: {name, phone, address, payment, bank: selectedBank},
     items: cart,
     subtotal: subtotal,
     discount: discount,
