@@ -8,61 +8,63 @@
 </head>
 
 <body>
+
 <header>
   <div class="logo">
     <img src="image/blushy_transparan.png" alt="logo">
     <h1>Blushy</h1>
   </div>
-
   <nav>
-  <ul>
-    <li><a id="navHome">Beranda</a></li>
-    <li><a id="navProducts">Produk</a></li>
-    <li>
-  <a id="openCart" class="cart-link">
-    <span class="nav-cart-text">Keranjang</span>
-    <span class="nav-cart-emoji">🛒</span>
-    <span id="cartCount" class="badge">0</span>
-  </a>
-    </li>
-    <li class="mobile-auth"><a id="btnLoginMobile">Login</a></li>
-    <li class="mobile-auth"><a id="btnRegisterMobile">Daftar</a></li>
-  </ul>
-</nav>
-
+    <ul>
+      <li><a id="navHome">Beranda</a></li>
+      <li><a id="navProducts">Produk</a></li>
+      <li>
+        <a id="openCart" class="cart-link">
+          <span class="nav-cart-text">Keranjang</span>   
+          <span class="nav-cart-emoji">🛒</span>         
+          <span id="cartCount" class="badge">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
   <div class="auth desktop-auth">
     <button class="btn ghost" id="btnLogin">Login</button>
     <button class="btn" id="btnRegister">Daftar</button>
   </div>
-</header>
-
-  <main class="container">
-
-    <section class="hero">
-      <div class="left">
-        <h2>Flash Sale Hari Ini — Diskon sampai 50%</h2>
-        <p class="muted">Produk terbaik untuk perawatan kulitmu. Gratis ongkir untuk pesanan tertentu.</p>
-
-        <div class="search">
-          <input id="searchInput" placeholder="Cari produk, misal: serum, lip tint, face wash..." />
-        </div>
-      </div>
-      <div class="voucher-wrapper">
-        <img src="image/voucher.png" class="voucher-banner" alt="Voucher Promo">
-      </div>
-    </section>
-    <section class="products" id="productGrid"></section>
-
-  </main>
-
-  <footer>
-    © 2025 Blushy • Toko Kecantikan Online — Made with ❤️
-  </footer>
-
-  <div id="backdrop" class="modal-backdrop center" style="display:none">
-    <div class="modal" role="dialog" aria-modal="true" id="modalBox"></div>
+  <div class="mobile-auth">
+    <button class="btn ghost" id="btnLoginMobile">Login</button>
+    <button class="btn" id="btnRegisterMobile">Daftar</button>
   </div>
 
-  <script src="script.js"></script>
+</header>
+<main class="container">
+
+  <section class="hero">
+    <div class="left">
+      <h2>Flash Sale Hari Ini — Diskon sampai 50%</h2>
+      <p class="muted">Produk terbaik untuk perawatan kulitmu. Gratis ongkir untuk pesanan tertentu.</p>
+
+      <div class="search">
+        <input id="searchInput" placeholder="Cari produk, misal: serum, lip tint, face wash..." />
+      </div>
+    </div>
+
+    <div class="voucher-wrapper">
+      <img src="image/voucher.png" class="voucher-banner" alt="Voucher Promo">
+    </div>
+  </section>
+
+  <section class="products" id="productGrid"></section>
+
+</main>
+<footer>
+  © 2025 Blushy • Toko Kecantikan Online — Made with ❤️
+</footer>
+<div id="backdrop" class="modal-backdrop center" style="display:none">
+  <div class="modal" role="dialog" aria-modal="true" id="modalBox"></div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
