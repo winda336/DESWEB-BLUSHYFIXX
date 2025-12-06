@@ -11,7 +11,7 @@
         id: 'time-lipstain',
         name: 'Time Lip Stain',
         price: 58000,
-        desc: 'Lip stain ringan dengan hasil natural dan warna tahan lama, cocok untuk daily look.',
+        desc: 'Lipstik glossy dengan efek glitter eksklusif untuk tampilan bibir berkilau, dan transferproof. Memiliki warna-warna cerah dengan daya tahan lama.',
         img: 'image/time_lip_stain.jpg'
       },
       {
@@ -25,7 +25,7 @@
         id: 'pinkflash-lipcream',
         name: 'Pinkflash Lip Cream',
         price: 59500,
-        desc: 'Lip cream matte yang creamy dan hadir dengan beragam warna nude.',
+        desc: 'Lip cream matte yang creamy dan hadir dengan beragam warna nude. Dengan Formulasi pigmented tinggi, hasil akhir matte lembut, dan menjaga kelembapan bibir.',
         img: 'image/pinkflash_lip_cream.jpg'
       },
       {
@@ -37,28 +37,28 @@
       },
       {
         id: 'micellar water-seamakeup',
-        name: 'sea makeup micellar water',
+        name: 'Sea Makeup Micellar Water',
         price: 65000,
-        desc: 'Membantu menghapus makeup secara mudah dan menyeluruh',
+        desc: 'Membantu menghapus makeup secara mudah dan menyeluruh. Mengandung Salicylic Acid, Bisabolol, dan Mugwort untuk membersihkan makeup secara menyeluruh tanpa perih.',
         img : 'image/sm_micellar_water.jpg'
       },
       {
         id: 'time-cushion',
         name: 'Time Cushion',
         price: 95000,
-        desc: 'Cushion dengan hasil akhir satin glow yang tahan lama dan ringan di kulit.',
+        desc: 'Cushion dengan hasil akhir satin glow yang tahan lama dan ringan di kulit. Menawarkan full coverage dengan hasil akhir matte halus dan tahan lama, efektif menyamarkan noda, pori, dan meratakan warna kulit tanpa terasa berat.',
         img: 'image/time_cushion.jpg'
       },
       {
         id: 'contour-luxcrime',
         name: 'Contour Luxcrime',
         price: 88590,
-        desc: 'Sangat mudah dibaurkan dan dibentuk, meluncur tanpa bobot, sehingga mudah diaplikasikan.',
+        desc: 'Sangat mudah dibaurkan dan dibentuk, meluncur tanpa bobot, sehingga mudah diaplikasikan. Dengan aplikator spons unik yang mudah digunakan untuk membentuk wajah, melebur sempurna ke kulit, memberikan hasil akhir lembut tanpa pudar.',
         img: 'image/luxcrime_contour.jpg'
       },
       {
         id: 'prime-mop',
-        name: 'primer MOP',
+        name: 'Primer MOP',
         price: 170000,
         desc: 'Primer dengan formula yang dapat melembabkan, mengencangkan, dan meminimalkan tampilan pori-pori di wajah',
         img: 'image/mop_primer.jpg'
@@ -74,21 +74,21 @@
         id: 'lip-vinyl-luxcrime',
         name: 'Lip Vinyl Luxcrime',
         price: 76820,
-        desc: 'Lipstik tahan transfer dengan kilau tinggi, tahan lama.',
+        desc: 'Lipstik tahan transfer dengan kilau tinggi, tahan lama. Dengan pigmentasi tinggi, tekstur lembut, mudah dibaurkan, tahan lama, dan tahan air.',
         img: 'image/luxcrime_lip_vinyl.jpg'
       },
       {
         id: 'eyeshadow-mop',
-        name: 'eyeshadow MOP',
+        name: 'Eyeshadow MOP',
         price: 200000,
-        desc: 'Palet eyeshadow 3 shades dengan kombinasi warna yang cantik',
+        desc: 'Palet eyeshadow 3 shades dengan kombinasi warna yang cantik. Dengan pigmentasi tinggi, formula mudah dibaurkan (blends well), dan variasi hasil akhir seperti matte, shimmer, glitter, & satin.',
         img: 'image/mop_eyeshadow.jpg'
       },
       {
         id: 'time-contour',
         name: 'Time Contour',
         price: 72000,
-        desc: 'Contour dengan tekstur creamy yang mudah dibaurkan, memberikan dimensi natural pada wajah.',
+        desc: 'Contour dengan tekstur creamy yang mudah dibaurkan, memberikan dimensi natural pada wajah. Dengan formula lembut seperti bedak yang mudah dibaurkan, menghasilkan warna intens dalam satu sapuan.',
         img: 'image/time_contour.jpg'
       },
       {
@@ -100,121 +100,121 @@
       },
       {
         id: 'foundation-mop',
-        name: 'foundation MOP',
+        name: 'Foundation MOP',
         price: 170500,
-        desc: 'Hybrid matte foundation dengan coverage super tinggi',
+        desc: 'Hybrid matte foundation dengan coverage super tinggi dengan hasil akhir satin-matte yang nyaman, ringan, dan mudah dibaurkan, diperkaya dengan SPF 40 PA++, Niacinamide, dan Peptides.',
         img: 'image/mop_foundat.jpg'
       },
       {
         id: 'pinkflash-lipglaze',
         name: 'Pinkflash Lip Glaze',
         price: 56500,
-        desc: 'Lip gloss ringan dengan kilau lembut, memberikan hasil glossy tanpa rasa lengket.',
+        desc: 'Lip gloss ringan dengan kilau lembut, memberikan hasil glossy tanpa rasa lengket, menyamarkan garis bibir, menawarkan pigmentasi tinggi, ketahanan lama, dan mudah diaplikasikan.',
         img: 'image/pinkflash_lip_glaze.jpg'
       },
       {
         id: 'lip-serum-skintific',
         name: 'Lip Serum Skintific',
         price: 116000,
-        desc: 'Dapat mencerahkan, menghaluskan, meratakan dan perawatan untuk bibir gelap,.',
+        desc: 'Dapat mencerahkan, menghaluskan, meratakan dan perawatan untuk bibir gelap dengan formula kandungan utama Peptida, Vitamin C, dan Squalane yang menutrisi intensif dalam 14 hari.',
         img: 'image/skin_lip_serum.jpg'
       },
       {
         id: 'time-lipmatte',
         name: 'Time Lip Matte',
         price: 63000,
-        desc: 'Lip matte lembut dengan warna intens dan hasil akhir velvet yang tidak membuat bibir kering.',
+        desc: 'Lip matte lembut dengan warna intens dan hasil akhir velvet yang tidak membuat bibir kering, tahan lama, dan nyaman di bibir.',
         img: 'image/time_lip_matte.jpg'
       },
       {
         id: 'lip cream-mop',
-        name: 'lip cream MOP',
+        name: 'Lip Cream MOP',
         price: 59500,
-        desc: 'lip cream matte yang creamy dan hadir dengan warna nude.',
+        desc: 'Lip cream matte yang creamy dan hadir dengan warna nude diperkaya Vitamin E untuk menjaga kelembapan bibir.',
         img: 'image/mop_lip_cream.jpg'
       },
       {
         id: 'bedak-skintific',
         name: 'Bedak Skintific',
         price: 149000,
-        desc: 'Bedak Tabur Invisiblur All Day dengan hasil akhir matte instan, sempurna, dan bebas kilap.',
+        desc: 'Bedak Tabur Invisiblur All Day dengan hasil akhir matte instan, sempurna, serta mampu  mengontrol minyak hingga 16 jam, tahan air & keringat, serta menjaga kelembapan kulit berkat kandungan Multi Molecular Weight Hyaluronic Acid dan dilapisi Amino Acid.',
         img: 'image/skin_bedak.jpg'
       },
       {
         id: 'pinkflash-bundlingmaskara',
         name: 'Pinkflash Bundling Maskara',
         price: 78000,
-        desc: 'Paket bundling maskara waterproof untuk tampilan bulu mata lebih tebal dan lentik.',
+        desc: 'Paket hemat kombinasi maskara waterproof untuk menciptakan tampilan mata lengkap, dengan keunggulan formula waterproof, tahan lama, tidak menggumpal, dan memberikan efek bervolume serta memanjangkan bulu mata.',
         img: 'image/pinkflash_bundling_maskara.jpg'
       },
       {
         id: 'wipes-luxcrime',
         name: 'Wipes Luxcrime',
         price: 47500,
-        desc: 'Tisu penghapus riasan tanpa membuat kulit kering atau membutuhkan air.',
+        desc: 'Tisu penghapus riasan tanpa membuat kulit kering atau membutuhkan air diformulasikan dengan bahan menutrisi seperti Niacinamide dan Bunga Marigold, cocok untuk bepergian.',
         img: 'image/luxcrime_wipes.jpg'
       },
       {
         id: 'loose powder-mop',
-        name: 'loose powder MOP',
+        name: 'Loose Powder MOP',
         price: 150000,
-        desc: 'Microblur translucent loose powder untuk kunci makeup dan samarkan pori-pori',
+        desc: 'Bedak tabur transparan bertekstur sangat halus yang dirancang untuk mengunci makeup, mengontrol minyak, dan memberikan efek blur/soft focus untuk menyamarkan pori-pori serta garis halus, menghasilkan tampilan wajah matte yang halus, ringan, tahan lama.',
         img: 'image/mop_loose_powder.jpg'
       },
       {
         id: 'time-stellardust',
         name: 'Time Stellar Dust Lip Stain',
         price: 64000,
-        desc: 'Lip stain berkilau dengan efek shimmering lembut, memberikan kesan elegan dan mempesona.',
+        desc: 'Lip stain berkilau dengan efek shimmering lembut, memberikan kesan elegan dan mempesona, bertekstur ringan yang menawarkan pigmentasi intens, warna cerah, dan daya tahan luar biasa berkat formula "2 in 1 Hybrid Lip".',
         img: 'image/time_stellar_dust_lip_stain.jpg'
       },
       {
         id: 'cushion-skintific',
         name: 'Cushion Skintific',
         price: 169000,
-        desc: 'Cushion dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin.',
+        desc: 'Cushion dalam kemasan praktis dengan finish velvet matte, menjadikan tampilan akhir flawless and looks like a healthy skin.',
         img: 'image/skin_cushion.jpg'
       },
       {
         id: 'sunscreen-luxcrime',
         name: 'Sunscreen Luxcrime',
         price: 68500,
-        desc: 'Tabir surya ultra-halus dan ringan dengan SPF50+ untuk perlindungan UV Anda sepanjang hari.',
+        desc: 'Tabir surya ultra-halus dan ringan dengan SPF50+ untuk perlindungan UV Anda sepanjang hari. Dengan tekstur essence atau krim-gel yang tidak lengket, tidak meninggalkan white cast, cepat meresap, dan menghidrasi kulit dengan kandungan Niacinamide dan Hyaluronic Acid sambil mencerahkan dan melindungi dari UV serta polusi',
         img: 'image/luxcrime_sunscreen.jpg'
       },
       {
         id: 'lip balm-seamakeup',
-        name: 'sea makeup lip balm',
+        name: 'Sea Makeup Lip Balm',
         price: 53800,
-        desc: 'Tinted lip balm dengan warna yang vibrant dan strong glossy effect',
+        desc: 'Tinted lip balm dengan warna yang vibrant dan strong glossy effect dengan kandungan 3X Hyaluronic Acid dan Hydrating Oil Blend yang dapat menghidrasi bibir secara lembut sepanjang hari.',
         img: 'image/sm_lipbalm.jpg'
       },
       {
         id: 'pinkflash-eyeshadow',
         name: 'Pinkflash Eyeshadow',
         price: 50500,
-        desc: 'Eyeshadow palette dengan pilihan warna nude dan shimmer, mudah diaplikasikan untuk daily look.',
+        desc: 'Eyeshadow palette dengan pilihan warna nude dan shimmer, mudah diaplikasikan untuk daily look, tekstur lembut, mudah dibaur, tahan lama, dan formula waterproof, menawarkan beragam pilihan warna dan hasil akhir.',
         img: 'image/pinkflash_eyeshadow.jpg'
       },
       {
         id: 'loose powder-seamakeup',
-        name: 'sea makeup loose powder',
+        name: 'Sea Makeup Loose Powder',
         price: 78000,
-        desc: 'Dapat menyamarkan pori-pori dan awet sepanjang hari',
+        desc: 'Bedak tabur ringan dengan partikel halus yang dirancang untuk kulit berjerawat dan berminyak, berfungsi menyamarkan pori (blurring), mengontrol minyak hingga 8 jam, mengunci makeup, memberikan hasil akhir matte dan flawless.',
         img: 'image/sm_loose_powder.jpg'
       },
       {
         id: 'skin tint-luxcrime',
         name: 'Skin Tint Luxcrime',
         price: 125150,
-        desc: 'Skin Tint yang ringan dengan coverage tinggi, sekaligus menghidrasi dan melindungi kulit dari sinar matahari.',
+        desc: 'Skin Tint yang ringan dengan coverage tinggi, sekaligus menghidrasi dan melindungi kulit dari sinar matahari dengan perlindungan SPF 35 PA+++, serta coverage yang dapat dibangun (buildable) dari ringan hingga medium tanpa terasa berat, lengket, atau menyebabkan pilling.',
         img: 'image/luxcrime_skin_tint.jpg'
       },
       {
         id: 'setting spray-seamakeup',
-        name: 'sea makeup setting spray',
+        name: 'Sea Makeup Setting Spray',
         price: 120000,
-        desc: 'Kunci makeup tahan lama serta segar sepanjang hari',
+        desc: 'Kunci makeup tahan lama serta segar sepanjang hari, mampu merawat dan mencegah jerawat dengan kandungan succinic acid serta membantu mengontrol minyak tanpa membuat kulit kering.',
         img: 'image/sm_settspray.jpg'
       },
       {
@@ -226,197 +226,203 @@
       },
       {
         id: 'blush on-seamakeup',
-        name: 'sea makeup vibrant flushed liquid blush',
+        name: 'Sea Makeup Vibrant Flushed Liquid Blush',
         price: 70000,
-        desc: 'Blush on cair yang diformulasikan khusus untuk kulit berjerawat',
+        desc: 'Blush on cair yang diformulasikan khusus untuk kulit berjerawat. engan 2 warna ini berpigmen, mudah dibaurkan, dan cocok untuk semua warna kulit.',
         img: 'image/sm_blush.jpg'
       },
       {
         id: 'lip-velvet-luxcrime',
         name: 'Lip velvet Luxcrime',
         price: 63000,
-        desc: 'Teksturnya yang lembut dan halus saat diaplikasikan, meninggalkan rasa lembut dan halus.',
+        desc: 'Lip cream dengan tekstur lembut seperti beludru, hasil akhir semi-matte yang membaur halus di bibir, diperkaya Vitamin E dan minyak jojoba untuk melembapkan, memberikan warna intens namun nyaman, serta memiliki efek blurring untuk menyamarkan tekstur bibir',
         img: 'image/luxcrime_lip_velvet.jpg'
       },
       {
         id: 'sunscreen-skintific2',
         name: 'Bright Sunscreen Skintific',
         price: 71091,
-        desc: 'Sunscreen 2-in-1 dengan memberikan perlindungan SPF 50 PA++++ sekaligus one up secara instan tanpa meninggalkan white cast.',
+        desc: 'Sunscreen 2-in-1 dengan memberikan perlindungan SPF 50 PA++++ dan meratakan warna kulit secara instan dengan efek tone-up alami sekaligus one up secara instan tanpa meninggalkan white cast.',
         img: 'image/skin_bright_sunscreen.jpg'
       },
       {
         id: 'Serum-somethinc',
         name: 'Somethinc Serum',
         price: 120000,
-        desc: 'Serum pencerah wajah dengan kandungan 2% BHA Salicylid Acid Liquid Profector.',
+        desc: 'Serum pencerah wajah dengan kandungan 2% BHA Salicylid Acid Liquid Profector. Mampu membersihkan pori tersumbat, mengurangi komedo, jerawat, dan mengontrol minyak berlebih, menenangkan kulit dan memperkuat skin barrier, serta cocok untuk kulit berminyak dan berjerawat.,
         img: 'image/somth_serum.jpeg'
       },
       {
         id: 'Lip Tint-dearmebeauty',
         name: 'Lip Tint Dear Me Beauty',
         price: 45000,
-        desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari.',
+        desc: 'Lip tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari. Dikaya nutrisi seperti Rosehip Oil, Vitamin E, dan Niacinamide untuk bibir sehat, serta Velvet Lip Tint dengan tekstur velvety-matte yang lembut, blurring effect, dan pigmentasi kuat.',
         img: 'image/dearme_lip_tint.png'
       },
       {
         id: 'Face Wash-somethinc',
         name: 'Face Wash Somethinc',
         price: 60000,
-        desc: 'Pembersih wajah dengan aroma mint, membantu menyegarkan dan membersihkan kotoran ringan.',
+        desc: 'Pembersih wajah dengan aroma mint, membantu menyegarkan dan membersihkan kotoran ringan. Diformulasikan untuk membersihkan secara mendalam tanpa membuat kulit kering atau merusak skin barrier, cocok untuk semua jenis kulit termasuk sensitif dan berjerawat.',
         img: 'image/someth_cuci_muka.png'
       },
       {
         id: 'Sunscreen-dearmebeauty',
         name: 'Sunscreen Dear Me Beauty',
         price: 65000,
-        desc: 'Tabir surya harian yang tidak lengket, memberikan efek glowing natural dan perlindungan kelembapan.',
+        desc: 'Tabir surya harian yang tidak lengket, memberikan efek glowing natural dan perlindungan kelembapan. Dengan SPF 50+ PA++++ yang melindungi dari UVA/UVB, blue light, polusi, dan radikal bebas.',
         img: 'image/dearme_sunscreen.png'
       },
       {
         id: 'Skintint-RAD',
         name: 'Skintint Rose All Day',
         price: 85000,
-        desc: 'Skintint berbahan ringan, sehingga tidak membuat makeup berat diwajah.',
+        desc: 'Skintint berbahan ringan, sehingga tidak membuat makeup berat diwajah, dengan coverage tipis hingga sedang yang bisa dibangun, formula pore-blurring, serta mengandung bahan perawatan kulit seperti Niacinamide dan Squalane, dilengkapi SPF 25 PA+++ dan Anti-Pollutant, cocok untuk semua jenis kulit.',
         img: 'image/Skintint_Rose_All_Day.png'
       },
       {
         id: 'Blush On-dearmebeauty',
         name: 'Blush On Dear Me Beauty',
         price: 50000,
-        desc: 'Blush On dalam bentuk cream yang mudah untuk diblend.',
+        desc: 'Blush On dalam bentuk cream yang mudah untuk diblend, dengan coverage tipis hingga sedang yang bisa dibangun, formula pore-blurring, serta mengandung bahan perawatan kulit seperti Niacinamide dan Squalane, dilengkapi SPF 25 PA+++ dan Anti-Pollutant, cocok untuk semua jenis kulit.',
         img: 'image/dearme_blush_on.png'
       },
       {
         id: 'Moisturizer-dearmebeauty',
         name: 'Moisturizer Dear Me Beauty',
         price: 45000,
-        desc: 'Moisturizer berbahan ringan dan cocok untuk digunakan kulit normal',
+        desc: 'Moisturizer berbahan ringan dan cocok untuk digunakan kulit normal, dengan kombinasi Niacinamide 5%, 3x Ceramide Complex, dan Cica (80% Cica), membantu mencerahkan, menenangkan, dan mengurangi jerawat, serta melindungi dari blue light, menjadikannya ideal untuk semua jenis kulit, termasuk sensitif dan rentan jerawat.',
         img: 'image/dearme_cream.png'
       },
       {
         id: 'Mascara-RAD',
         name: 'Mascara Rose All Day',
         price: 65000,
-        desc: 'Mascara yang dapat membuat bulu mata lentik natural',
+        desc: 'Mascara yang dengan  formula waterproof, non-clumpy, dan tahan lama, memberikan efek panjang dan lentik natural.',
         img: 'image/rad_maskara.png'
       },
       {
         id: 'Loose Powder-RAD',
         name: 'Loose Powder Rose All Day',
         price: 55000,
-        desc: 'Loose Powder ringan yang dapat menahan minyak sehari-hari',
+        desc: 'Loose Powder ringan yang dapat menahan minyak sehari-hari. Memberikan hasil akhir soft matte, dan formula non-comedogenic yang tidak menyumbat pori.',
         img: 'image/rad_bedak.png'
       },
       {
         id: 'Cushion-RAD',
         name: 'Cushion Rose All Day',
         price: 220000,
-        desc: 'Cushion dengan coverage tinggi yang cocok untuk sehari-hari',
+        desc: 'Cushion lokal dengan efek pore-blurring untuk kulit flawless, dilindungi SPF 40 PA+++, serta mengandung 2% Niacinamide dan Hyaluronic Acid untuk melembapkan, mencerahkan, dan mengontrol minyak tanpa membuatnya cakey atau greasy, cocok untuk semua jenis kulit.',
         img: 'image/rad_cushion.png'
       },
       {
         id: 'Lip Tint-somethinc',
         name: 'Lip Tint Somethinc',
         price: 85000,
-        desc: 'Lip Tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari',
+        desc: 'Lip Tint berbahan ringan, warna tahan lama, cocok untuk tampilan natural sehari-hari. Dengan hasil akhir blur powdery yang ringan, tahan lama, dan menutupi garis bibir gelap, serta Ombrella Lip Totem Tint dengan efek glossy dan stain tahan lama, dan Ceraplump Tinted Lip Balm yang lebih fokus pada perawatan bibir dengan pelembap, ceramide, peptide, dan SPF 25 PA++++ untuk bibir plumpy, sehat, dan terlindungi.',
         img: 'image/somth_lip_tint.jpg'
       },
       {
         id: 'Cushion-somethinc',
         name: 'Cushion Somethinc',
         price: 150000,
-        desc: 'Cuushion dengan berbahan ringan yang dapat menahan minyak',
+        desc: 'Cuushion dengan berbahan ringan yang dapat menahan minyak, tahan lama, dan diformulasikan untuk kulit serta cuaca Indonesia, dengan hasil akhir matte atau healthy glow yang menyatu dengan warna kulit dan menutupi kekurangan wajah.',
         img: 'image/someth_cuschion.png'
       },
       {
         id: 'Moisturizer-skintific',
         name: 'Moisturizer Somethinc',
         price: 225000,
-        desc: 'Moisturizer untuk memperkuat skin barrier',
+        desc: 'Pelembap gel-krim ringan yang diformulasikan untuk mengunci kelembapan hingga 24 jam, memperkuat skin barrier, menghidrasi, mencerahkan, serta menyamarkan noda hitam.',
         img: 'image/someth_mois.png'
       },
       {
         id: 'Concealer-RAD',
         name: 'Concealer Rose All Day',
         price: '120000',
-        desc: 'Concealer dengan coverage tinggi dapat menutupi noda-noda diwajah',
+        desc: 'Concealer dengan dengan medium-to-high coverage yang bisa di-build, hasil akhir satin, dan formula creaseless (tidak mudah retak) yang melembapkan sekaligus mengontrol minyak berkat kandungan skincare seperti Hyaluronic Acid, Niacinamide, dan Marine Blue Vital C, dilengkapi efek pore-blurring, tahan lama, dan water-resistant, ideal untuk menutupi noda sambil merawat kulit.',
         img: 'image/rad_concealer_rose.png'
       },
       {
         id: 'Foundation-dearmebeauty',
         name: 'Foundation Dear Me Beauty',
         price: 75000,
-        desc: 'Foundation coverage tinggi yang cocok digunakan untuk acara-acara penting',
+        desc: 'Foundation coverage tinggi yang mampu meratakan warna kulit dan menyamarkan pori-pori dengan hasil akhir satin atau velvet yang halus seperti kulit asli, non-comedogenic, mudah dibaurkan, dan cukup tahan lama untuk pemakaian harian.',
         img: 'image/dearme_foundation.png'
       },
       {
         id: 'Body Serum-glad2glow',
-        name: 'Body Serum Gland 2 Glow',
+        name: 'Body Serum Glad 2 Glow',
         price: 79000,
-        desc: 'Body serum yang diformulasikan untuk menutrisi kulit secara mendalam dan membantu mencerahkan tampilan kulit kusam',
+        desc: 'Body serum yang diformulasikan untuk menutrisi kulit secara mendalam dan membantu mencerahkan tampilan kulit kusam, menyamarkan noda gelap, meratakan warna kulit, dan melembapkan hingga 24 jam dengan kandungan utama seperti Niacinamide, Glycerin, serta ekstrak buah seperti Creamy Berry atau Tropical, memberikan kulit tampak lebih glowing, halus, dan harum tahan lama.',
         img: 'image/g2g_body_serum.jpg'
       },
       {
         id: 'Cushion-BNB',
         name: 'Cushion Barenbliss',
         price: 95000,
-        desc: 'Cushion dengan flawless matte yang memberikan coverage tinggi dan tahan lama',
+        desc: 'Cushion dengan flawless matte yang memberikan coverage tinggi dan tahan lama, mampu menyerap minyak berlebih dan menutrisi kulit, memberikan ketahanan hingga 24 jam.',
         img: 'image/barenblis_cushion.jpg'
       },
       {
         id: 'Micellar Water-glad2glow',
-        name: 'Micellar Water Gland 2 Glow',
+        name: 'Micellar Water Glad 2 Glow',
         price: 45000,
-        desc: 'Micellar Water pembersih wajah yang mampu mengangkat makeup',
+        desc: 'Pembersih makeup tanpa bilas yang mengangkat kotoran dan makeup, termasuk yang waterproof, dengan cepat dan lembut.',
         img: 'image/g2g_micelar_water.jpg'
       },
       {
         id: 'Liptint-BNB',
         name: 'Liptint Barenbliss',
         price: 55000,
-        desc: 'Liptint Barenbliss dengan tekstur gel ringan dan tahan lama hingga 12 jam',
+        desc: 'Liptint Barenbliss dengan tekstur gel ringan dengan aroma buah persik yang memberikan warna intens, hasil akhir glossy, dan sensasi lembap tahan lama hingga 12 jam.',
         img: 'image/barenblis_liptint.jpg'
       },
       {
         id: 'Milk Amino-glad2glow',
         name: 'Milk Amino Glad 2 Glow',
         price: 65000,
-        desc: 'Milk Amino dengan essence berbasis susu untuk menjaga kelembapan kulit',
+        desc: 'Milk Amino dengan formula pH rendah yang lembut, kaya busa, mengandung bahan utama amino acid (asam amino) dan milk (susu) yang berfungsi membersihkan secara mendalam, menjaga kelembaban kulit, merawat skin barrier, dan membuat kulit terasa lebih cerah serta segar.',
         img: 'image/g2g_milk_amino.jpg'
       },
       { 
         id: 'Maskara-BNB',
         name: 'Maskara Barenbliss',
         price: 65000,
-        desc: 'Maskara Barenbliss yang memberikan efek panjang lentik dengan formula tahan air hingga 24 jam',
+        desc: 'Maskara Barenbliss yang memberikan efek panjang lentik dengan formula tahan air hingga 24 jam, memberikan efek panjang, tebal, dan lentik dramatis tanpa menggumpal, diperkaya dengan kandungan seperti Peptida, Vitamin E, Jojoba Oil, dan Olive Oil untuk menutrisi dan memperkuat bulu mata.',
         img: 'image/barenblis_maskara.jpg'
       },
       {
         id: 'Power Bright Serum-glad2glow',
         name: 'Power Bright Serum Glad 2 Glow',
         price: 89000,
-        desc: 'Serum dengan kandungan vitamin C untuk mengatasi noda hitam dan warna kulit yang tidak merata',
+        desc: 'Serum dengan kandungan vitamin C untuk mengatasi noda hitam dan warna kulit yang tidak merata dengan formula utama 10% Niacinamide, Ekstrak Delima (Pomegranate), dan Alpha Arbutin yang ringan, cepat menyerap, dan efektif untuk mencerahkan, meratakan warna kulit, serta menyamarkan bekas jerawat.',
         img: 'image/g2g_power_bright_serum.jpg'
       },
       {
         id: 'Blush on-BNB',
         name: 'Blush on Barenbliss',
         price: 77000,
-        desc: 'Blush on yang memiliki tekstur mochi yang lembut dan creamy tahan lama hingga 12 jam',
+        desc: 'Blush on yang memiliki tekstur mochi yang lembut dan creamy tahan lama hingga 12 jam dengan hasil akhir soft-matte, sangat mudah dibaurkan, serta diperkaya kandungan pelembap (skincare) untuk kulit sehat dan nyaman digunakan seharian.',
         img: 'image/barenblish_blush_on.jpg'
       },
       {
         id: 'Serum-glad2glow',
         name: 'Serum Glad 2 Glow',
         price: 75000,
-        desc: 'Serum dengan multifungsi yang membantu menutrisi kulit dan menjaga elastisitas',
+        desc: 'Serum dengan multifungsi yang membantu menutrisi kulit dan menjaga elastisitas, untuk mengatasi masalah kulit seperti kusam, jerawat, dan noda hitam, dengan fokus mencerahkan, melembapkan, serta menenangkan kulit.',
         img: 'image/g2g_serum.jpg'
       }
     ];
 
     function formatRupiah(n){
       return 'Rp' + Number(n).toLocaleString('id-ID');
+    }
+    function trimDesc(text, max = 90) {
+      return text.length > max ? text.substring(0, max) + "..." : text; 
+    }
+    function trimName(text, max = 20) {
+      return text.length > max ? text.substring(0, max) + "..." : text;
     }
 
     const grid = document.getElementById('productGrid');
@@ -429,8 +435,8 @@
         card.className = 'card';
         card.innerHTML = `
           <img src="${p.img}" alt="${p.name}" loading="lazy">
-          <h3>${p.name}</h3>
-          <p class="small">${p.desc}</p>
+          <h3>${trimName(p.name, 20)}</h3>
+          <p class="small">${trimDesc(p.desc, 90)}</p>
           <div class="price">${formatRupiah(p.price)}</div>
           <div class="actions">
             <button class="btn add-cart" data-add="${p.id}">Tambah ke Keranjang</button>
@@ -1066,6 +1072,7 @@ window.applyVoucher = applyVoucher;
     }
 
     updateUserUI();
+
 
 
 
