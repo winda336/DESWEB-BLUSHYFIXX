@@ -372,7 +372,7 @@ textarea {
   .card img {
     height: 160px;
   }
-} /* <-- INI WAJIB ADA */
+} 
 
 @media (max-width: 900px) {
   header {
@@ -451,26 +451,13 @@ textarea {
   display: none;
 }
 @media (max-width: 768px) {
-  .nav-cart-text {
-    display: none;
-  }
-  
-  .nav-cart-emoji {
-    display: inline;
-  }
-}
-.desktop-auth {
-  display: flex;
-}
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 6px;
 
-.mobile-auth {
-  display: none;
-}
-@media (max-width: 768px) {
-  .desktop-auth {
-    display: none;
-  }
-  .mobile-auth {
-    display: block;
+    pointer-events: auto;  
   }
 }
