@@ -649,7 +649,7 @@ function checkFirstTimeBuyer() {
           <select id="fPayment">
             <option value="bank">Transfer Bank</option>
             <option value="cod">Bayar di Tempat (COD)</option>
-            <option value="e-wallet">E-Wallet (OVO/GoPay/Dana)</option>
+            <option value="e-wallet">E-Wallet</option>
           </select>
         </div>
 
@@ -1116,5 +1116,6 @@ window.applyVoucher = applyVoucher;
     }
 
     updateUserUI();
+
 
 
