@@ -625,7 +625,7 @@ function checkFirstTimeBuyer() {
   ` : '';
   
   openBackdrop(`
-    <div>
+    <div class="modal-body-scroll">
       <div style="display:flex;justify-content:space-between;align-items:center">
         <h4>Checkout</h4><span class="close-x" onclick="closeBackdrop()">×</span>
       </div>
@@ -1097,3 +1097,4 @@ window.applyVoucher = applyVoucher;
     }
 
     updateUserUI();
+
