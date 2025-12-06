@@ -6,7 +6,6 @@
   --teal: #61BFBE;
   --muted: #6b6b6b;
   --card-shadow: 0 6px 18px rgba(16,24,40,0.08);
-
 }
 
 * {
@@ -31,6 +30,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
+  gap: 16px;
 }
 
 .logo {
@@ -73,26 +73,16 @@ nav a:hover {
   font-weight: 900;
 }
 
-@media (max-width: 900px) {
-  nav a {
-    font-weight: 800 !important;
-  }
-}
-
 .auth {
   display: flex;
   gap: 10px;
 }
 
-.nav-cart-emoji {
-  font-size: 20px;
-}
 .btn {
   background: var(--teal);
   color: #fff;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 20px;
-  text-decoration: none;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -102,6 +92,39 @@ nav a:hover {
   background: transparent;
   color: #444;
   border: 1px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 14px 18px;
+  }
+
+  nav {
+    width: 100%;
+    order: 2;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .auth {
+    order: 3;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
 }
 
 .container {
@@ -149,18 +172,9 @@ nav a:hover {
   outline: none;
 }
 
-.promo {
-  background: var(--bright-pink);
-  color: #fff;
-  padding: 12px 16px;
-  border-radius: 12px;
-  font-weight: 700;
-  display: inline-block;
-}
-
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 18px;
   margin-top: 18px;
 }
@@ -170,8 +184,6 @@ nav a:hover {
   border-radius: 14px;
   padding: 12px;
   box-shadow: var(--card-shadow);
-  overflow: hidden;
-  cursor: default;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -193,20 +205,11 @@ nav a:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 20px;
-  height: 40px;
   min-height: 40px;
-  max-height: 40px;
-}
-
-.card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
 }
 
 .card p.small {
   min-height: 65px;
-  max-height: 65px;
   overflow: hidden;
 }
 
@@ -217,17 +220,10 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.card .actions {
+.actions {
   display: flex;
   gap: 8px;
   align-items: center;
-  margin-top: 0;
-  padding-bottom: 6px;
-}
-
-.small {
-  font-size: 12px;
-  color: #777;
 }
 
 footer {
@@ -242,8 +238,8 @@ footer {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.45);
-  align-items: center;
   justify-content: center;
+  align-items: center;
   z-index: 200;
 }
 
@@ -256,253 +252,27 @@ footer {
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-.modal h4 {
-  margin: 0 0 8px;
-}
-
-.close-x {
-  float: right;
-  cursor: pointer;
-  font-weight: 700;
-  color: #888;
-}
-
-.form-row {
-  display: flex;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-input[type="text"], input[type="email"], input[type="password"], textarea, select {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  width: 100%;
-  outline: none;
-  font-size: 14px;
-}
-
-textarea {
-  min-height: 80px;
-  resize: vertical;
-}
-
-.cart-list {
-  max-height: 240px;
-  overflow: auto;
-  padding: 6px 0;
-  margin: 8px 0;
-}
-
-.cart-item {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #f3f3f3;
-}
-
-.cart-item img {
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.cart-item .meta {
-  flex: 1;
-}
-
-.cart-item .meta h5 {
-  margin: 0;
-  font-size: 14px;
-}
-
-.cart-item .meta p {
-  margin: 4px 0 0;
-  font-size: 13px;
-  color: #777;
-}
-
-.cart-item .rm {
-  background: transparent;
-  border: none;
-  color: #b00;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-.total-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  font-weight: 800;
-}
-
-.checkout-section {
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-}
-
-.flex-row {
-  display: flex;
-  gap: 12px;
-}
-
-.muted {
-  color: #777;
-  font-size: 13px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 700px) {
-  .hero {
-    flex-direction: column;
-  }
-  .search input {
-    width: 100%;
-  }
-  .card img {
-    height: 160px;
-  }
-} 
-
 @media (max-width: 900px) {
-  header {
-    flex-wrap: wrap;
-    padding: 14px 18px;
-  }
-  nav ul {
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .logo img {
-    width: 38px;
-    height: 38px;
-  }
-  .logo h1 {
-    font-size: 18px;
-  }
   .hero {
     flex-direction: column;
   }
-  .hero .left {
-    width: 100%;
-  }
-  .hero img {
-    width: 100%;
-  }
-  .search input {
-    width: 100%;
-  }
+
   .products {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 }
+
 @media (max-width: 420px) {
   .products {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   }
+
   .card img {
     height: 120px;
   }
-  .card h3 {
-    font-size: 14px;
-  }
-  .card p {
-    font-size: 12px;
-  }
+
   .btn {
     padding: 6px 10px;
     font-size: 12px;
   }
-  .modal h4 {
-    font-size: 16px;
-  }
-  .btn.add-cart-img img {
-    width: 26px;
-    height: 26px;
-    object-fit: contain;
-  }
 }
-
-.cart-icon-btn {
-  display: none;
-  background: transparent;
-  border: none;
-  padding: 4px !important;
-}
-
-.cart-icon-btn img,
-.btn.add-cart-img img {
-  width: 20px !important;
-  height: 20px !important;
-  object-fit: contain;
-}
-.nav-cart-emoji {
-  display: none;
-}
-.auth {
-  display: flex;
-  gap: 10px;
-}
-@media(max-width:768px) {
-  header {
-    flex-wrap: wrap;
-  }
-
-  .auth.desktop-auth {
-    width: 100%;
-    display: flex !important;
-    justify-content: flex-end;
-    margin-top: 8px;
-    z-index: 200; 
-  }
-}
-nav ul li a {
-  position: relative;
-  z-index: 1;
-}
-.auth button {
-  position: relative;
-  z-index: 999;
-}
-.mobile-auth {
-  display: none;
-  width: 100%;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 10px;
-  z-index: 2000;
-}
-
-@media(max-width: 768px) {
-  .mobile-auth {
-    display: flex !important;
-  }
-}
-.mobile-auth button {
-  position: relative;
-  z-index: 5000 !important;
-}
-
-header {
-  z-index: 10 !important;
-}
-
-#backdrop {
-  z-index: 9999 !important;
-}
-
-.modal {
-  z-index: 10000 !important;
-}
-
