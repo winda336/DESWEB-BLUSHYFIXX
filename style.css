@@ -450,14 +450,59 @@ textarea {
 .nav-cart-emoji {
   display: none;
 }
-@media (max-width: 768px) {
-  nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.auth {
+  display: flex;
+  gap: 10px;
+}
+@media(max-width:768px) {
+  header {
     flex-wrap: wrap;
-    padding-top: 6px;
+  }
 
-    pointer-events: auto;  
+  .auth.desktop-auth {
+    width: 100%;
+    display: flex !important;
+    justify-content: flex-end;
+    margin-top: 8px;
+    z-index: 200; 
   }
 }
+nav ul li a {
+  position: relative;
+  z-index: 1;
+}
+.auth button {
+  position: relative;
+  z-index: 999;
+}
+.mobile-auth {
+  display: none;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+  z-index: 2000;
+}
+
+@media(max-width: 768px) {
+  .mobile-auth {
+    display: flex !important;
+  }
+}
+.mobile-auth button {
+  position: relative;
+  z-index: 5000 !important;
+}
+
+header {
+  z-index: 10 !important;
+}
+
+#backdrop {
+  z-index: 9999 !important;
+}
+
+.modal {
+  z-index: 10000 !important;
+}
+
