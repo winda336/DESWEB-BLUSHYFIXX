@@ -197,3 +197,17 @@ nav a,
   font-weight: 800;
 }
 
+.modal-body-scroll {
+  max-height: 70vh;   
+  overflow-y: auto;   
+  padding-right: 10px; 
+}
+
+.modal-dialog {
+  max-width: 600px; 
+}
+
+.modal {
+  max-height: 80vh;
+  overflow: hidden;
+}
