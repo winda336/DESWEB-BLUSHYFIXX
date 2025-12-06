@@ -1,5 +1,4 @@
-
-:root{ 
+root{ 
   --cream: #FFFAE4;
   --soft-pink: #FAE4D9;
   --bright-pink: #FF8EA1;
@@ -358,5 +357,42 @@ textarea{
     flex-direction:row !important;
     gap:8px;
     margin-left:auto;
+  }
+}
+.btn-cart {
+  background: var(--teal);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+.btn-cart .text {
+  display: inline;
+}
+
+.btn-cart .icon {
+  display: none;
+}
+@media (max-width: 700px) {
+  .btn-cart {
+    padding: 10px 10px;
+    border-radius: 12px;
+  }
+
+  .btn-cart .text {
+    display: none;
+  }
+
+  .btn-cart .icon {
+    display: inline;
+    font-size: 20px;
   }
 }
