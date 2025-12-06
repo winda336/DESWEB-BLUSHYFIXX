@@ -24,8 +24,6 @@ nav ul{
   align-items:center;
 }
 
-nav ul li:nth-child(4) { display: none; }
-
 nav a{
   color:#333;
   text-decoration:none;
@@ -92,45 +90,45 @@ textarea{min-height:80px;resize:vertical}
   .card img{height:160px}
 }
 
-@media (max-width: 900px) {
-  header {flex-wrap: wrap;padding: 14px 18px;}
-  nav ul {gap: 10px;}
-  nav a {font-weight:800 !important;}
-
-  .hero {flex-direction: column;text-align: center;}
-  .hero .left {width: 100%;}
-  .search input {width: 100%;}
-  .products {grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));}
+@media (max-width:900px){
+  header{flex-wrap:wrap;padding:14px 18px;}
+  nav ul{gap:10px;}
+  nav a{font-weight:800 !important;}
+  .hero{flex-direction:column;text-align:center;}
+  .hero .left{width:100%;}
+  .search input{width:100%;}
+  .products{grid-template-columns:repeat(auto-fit,minmax(160px,1fr));}
 }
 
-@media (max-width: 600px) {
-  nav ul {justify-content:center;flex-wrap:wrap;}
-  .logo img {width: 38px;height: 38px;}
-  .logo h1 {font-size: 18px;}
-  .card img {height: 150px;}
-  .card {padding: 10px;}
-  .products {grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));gap: 14px;}
-  .modal {width: 95%;padding: 14px;}
-  input, textarea, select {font-size: 14px;padding: 10px;}
-  .actions .btn {padding: 6px 10px;font-size: 13px;}
+@media (max-width:600px){
+  header{
+    flex-direction:row !important;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  nav ul{
+    width:100%;
+    justify-content:center;
+    flex-wrap:nowrap;
+  }
+
+  .auth{
+    display:flex !important;
+    flex-direction:row !important;
+    margin-left:auto;
+    gap:8px;
+  }
+
+  .logo img{width:38px;height:38px;}
+  .logo h1{font-size:18px;}
+  .card img{height:150px;}
+  .products{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;}
+  .modal{width:95%;padding:14px;}
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: row !important;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .auth {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 8px;
-    margin-left: auto;
-  }
-  nav ul {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: nowrap;
-  }
+nav ul li a[href*="Promo"],
+nav ul li a[href*="promo"]{
+  display:none !important;
 }
