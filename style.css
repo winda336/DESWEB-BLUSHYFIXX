@@ -6,6 +6,7 @@
   --teal: #61BFBE;
   --muted: #6b6b6b;
   --card-shadow: 0 6px 18px rgba(16,24,40,0.08);
+
 }
 
 * {
@@ -79,11 +80,11 @@ nav a:hover {
 }
 
 .auth {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+  display: none !important;
 }
-
+.nav-cart-emoji {
+  font-size: 20px;
+}
 .btn {
   background: var(--teal);
   color: #fff;
@@ -487,7 +488,6 @@ textarea {
   height: 20px !important;
   object-fit: contain;
 }
-
 @media (max-width: 600px) {
   .add-cart {
     display: none;
@@ -495,5 +495,20 @@ textarea {
   .cart-icon-btn {
     display: inline-block;
   }
-header {
+}
+.nav-cart-text {
+  display: inline;
+}
+
+.nav-cart-emoji {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-cart-text {
+    display: none;
+  }
+  
+  .nav-cart-emoji {
+    display: inline;
+  }
 }
