@@ -249,7 +249,7 @@
         id: 'Serum-somethinc',
         name: 'Somethinc Serum',
         price: 120000,
-        desc: 'Serum pencerah wajah dengan kandungan 2% BHA Salicylid Acid Liquid Profector. Mampu membersihkan pori tersumbat, mengurangi komedo, jerawat, dan mengontrol minyak berlebih, menenangkan kulit dan memperkuat skin barrier, serta cocok untuk kulit berminyak dan berjerawat.,
+        desc: 'Serum pencerah wajah dengan kandungan 2% BHA Salicylid Acid Liquid Profector. Mampu membersihkan pori tersumbat, mengurangi komedo, jerawat, dan mengontrol minyak berlebih, menenangkan kulit dan memperkuat skin barrier, serta cocok untuk kulit berminyak dan berjerawat.',
         img: 'image/somth_serum.jpeg'
       },
       {
@@ -401,7 +401,7 @@
       },
       {
         id: 'Blush on-BNB',
-        name: 'Blush on Barenbliss',
+        name: 'Blush on Barenblish',
         price: 77000,
         desc: 'Blush on yang memiliki tekstur mochi yang lembut dan creamy tahan lama hingga 12 jam dengan hasil akhir soft-matte, sangat mudah dibaurkan, serta diperkaya kandungan pelembap (skincare) untuk kulit sehat dan nyaman digunakan seharian.',
         img: 'image/barenblish_blush_on.jpg'
@@ -1072,13 +1072,3 @@ window.applyVoucher = applyVoucher;
     }
 
     updateUserUI();
-
-
-
-
-
-
-
-
-
-
