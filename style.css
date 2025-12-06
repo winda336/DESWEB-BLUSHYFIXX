@@ -497,29 +497,37 @@ textarea {
   }
 }
 @media (max-width: 600px) {
+
   header {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px 10px;
+    text-align: center;
   }
 
-  nav ul {
-    flex: 1;
+  .logo {
     justify-content: center;
   }
-
+  header {
+    gap: 6px;
+  }
+  nav ul,
   .auth {
-    flex-shrink: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 6px;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: center;
   }
-  .auth .user-email {
-    font-size: 12px;
-    max-width: 100px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  .cart-text {
+    display: none;
+  }
+  .cart-link {
+    font-size: 18px;
+  }
+  .cart-mobile-btn {
+    display: none !important;
   }
 }
