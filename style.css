@@ -197,9 +197,10 @@ textarea{min-height:80px;resize:vertical}
   padding: 0;
 }
 
-.cart-icon-btn img {
-  width: 26px;
-  height: 26px;
+.cart-icon-btn img,
+.btn.add-cart-img img {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 600px) {
@@ -248,4 +249,5 @@ textarea{min-height:80px;resize:vertical}
   object-fit: cover;
   border-radius: 10px;
 }
+
 
