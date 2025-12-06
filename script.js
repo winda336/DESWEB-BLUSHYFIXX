@@ -656,11 +656,21 @@ function checkFirstTimeBuyer() {
         <div id="bankOptions" style="display:none; margin-top:8px;">
           <label class="small">Pilih Bank</label>
           <select id="fBank" class= "bank-select">
-            <option value="bri" data-logo="image/BRI.png">Bank BRI</option>
-            <option value="bni" data-logo="image/BNI.png">Bank BNI</option>
-            <option value="bca" data-logo="image/BCA.png">Bank BCA</option>
-            <option value="mandiri" data-logo="image/mandiri.png">Bank Mandiri</option>
+            <option value="bri">Bank BRI</option>
+            <option value="bni">Bank BNI</option>
+            <option value="bca">Bank BCA</option>
+            <option value="mandiri">Bank Mandiri</option>
             <option value="lainnya">Bank Lainnya</option>
+          </select>
+        </div>
+        <div id="ewalletOptions" style="display:none; margin-top:8px;">
+          <label class="small">Pilih E-Wallet</label>
+          <select id="fEwallet" class="ewallet-select">
+            <option value="ovo">OVO</option>
+            <option value="dana">Dana</option>
+            <option value="gopay">Gopay</option>
+            <option value="shopeepay">ShopeePay</option>
+            <option value="lainnya">Lainnya</option>
           </select>
         </div>
     </div>
@@ -697,10 +707,19 @@ function checkFirstTimeBuyer() {
   `);
   document.getElementById('fPayment').addEventListener('change', function () {
     const bankBox = document.getElementById('bankOptions');
+    const ewBox = document.getElementById('ewalletOptions');
+
     if (this.value === 'bank') {
       bankBox.style.display = 'block';
-    } else {
+      ewBox.style.display = 'none';
+    } 
+    else if (this.value === 'e-wallet') {
+      ewBox.style.display = 'block';
       bankBox.style.display = 'none';
+    } 
+    else {
+      bankBox.style.display = 'none';
+      ewBox.style.display = 'none';
     }
   });
 
@@ -1097,4 +1116,5 @@ window.applyVoucher = applyVoucher;
     }
 
     updateUserUI();
+
 
