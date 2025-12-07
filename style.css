@@ -508,3 +508,45 @@ nav ul {
     justify-content: flex-end;
   }
 }
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.actions button {
+  width: 100%;
+  padding: 10px;
+  background: var(--teal);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.actions button .icon {
+  display: none;     
+}
+
+.actions button .text {
+  display: inline;   
+}
+@media (max-width: 768px) {
+  .actions button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .actions button .text {
+    display: none;     
+  }
+
+  .actions button .icon {
+    display: inline;   
+    font-size: 18px;
+  }
+} 
