@@ -61,7 +61,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 50;
-    /* Menggunakan padding default desktop */
 }
 
 .logo {
@@ -104,6 +103,7 @@ nav a:hover {
     font-weight: 900;
 }
 
+/* KEMBALIKAN TOMBOL LOGIN/DAFTAR KE POSISI DAN UKURAN SEMULA */
 .auth {
     display: flex;
     gap: 10px;
@@ -111,9 +111,9 @@ nav a:hover {
 
 /* Mengatur tampilan keranjang di navigasi atas */
 .nav-cart-emoji {
-    display: none; /* Sembunyikan emoji keranjang (🛒) di navigasi agar hanya teks yang terlihat */
-    font-size: 20px; /* Aturan asli disimpan, namun display none yang utama */
+    display: none; 
 }
+
 
 /* ====================================
    4. Tombol Umum (BTN)
@@ -273,12 +273,12 @@ nav a:hover {
     gap: 6px;
 }
 
-/* Di Desktop, sembunyikan ikon keranjang */
+/* DI DESKTOP: Sembunyikan ikon, tampilkan teks */
 .add-to-cart .icon {
     display: none;
+    font-size: 18px; /* Ditetapkan agar ukuran ikon seragam saat tampil */
 }
 
-/* Di Desktop, tampilkan teks */
 .add-to-cart .text {
     display: inline;
 }
@@ -288,6 +288,7 @@ nav a:hover {
     flex-shrink: 0;
     padding: 10px 14px;
 }
+
 
 /* ====================================
    7. MODAL & KERANJANG
@@ -435,7 +436,7 @@ footer {
     }
     
     .auth {
-        order: 1; /* Posisikan Auth di baris pertama */
+        order: 1; 
         width: auto;
         display: flex; 
         gap: 10px;
@@ -443,7 +444,7 @@ footer {
 
     nav {
         width: 100%; 
-        order: 2; /* Navigasi di bawah logo/auth */
+        order: 2; 
         margin-top: 10px;
     }
 
@@ -453,23 +454,25 @@ footer {
         gap: 15px;
     }
     
-    /* Tombol Add-to-Cart Responsive (Hanya Ikon) */
+    /* Tombol Add-to-Cart Responsive (Hanya Ikon Kecil) */
     .add-to-cart {
         flex: 0 0 auto;
         width: 40px;
         height: 40px;
         padding: 0;
-        border-radius: 50%;
+        border-radius: 50%; /* Membuat tombol bulat */
         justify-content: center;
     }
 
+    /* DI MOBILE: Sembunyikan teks */
     .add-to-cart .text {
         display: none;
     }
 
+    /* DI MOBILE: Tampilkan ikon */
     .add-to-cart .icon {
         display: inline;
-        font-size: 18px;
+        font-size: 18px; 
     }
     
     /* Tombol Lihat/Ghost Responsive (Ikon Serasi) */
@@ -505,7 +508,6 @@ footer {
     .hero .left {
         width: 100%;
     }
-    /* Aturan img hero yang duplikat dihapus */
     .search input {
         width: 100%;
     }
@@ -548,5 +550,4 @@ footer {
     .modal h4 {
         font-size: 16px;
     }
-    /* Aturan lama untuk ikon keranjang yang duplikat/tidak terpakai dihapus */
 }
