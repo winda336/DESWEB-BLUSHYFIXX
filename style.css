@@ -1,513 +1,254 @@
+/* ====================================
+   1. Variabel Warna (ROOT)
+   ==================================== */
 :root {
-  --cream: #FFFAE4;
-  --soft-pink: #FAE4D9;
-  --bright-pink: #FF8EA1;
-  --mint: #BEEADE;
-  --teal: #61BFBE;
-  --muted: #6b6b6b;
-  --card-shadow: 0 6px 18px rgba(16,24,40,0.08);
-
+    --cream: #FFFAE4;
+    --soft-pink: #FAE4D9;
+    --bright-pink: #FF8EA1;
+    --mint: #BEEADE;
+    --teal: #61BFBE;
+    --muted: #6b6b6b;
+    --card-shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
 }
 
+/* ====================================
+   2. Aturan Dasar (BASE)
+   ==================================== */
 * {
-  box-sizing: border-box;
-  font-family: Inter, Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    box-sizing: border-box;
+    font-family: Inter, Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
 body {
-  margin: 0;
-  background: linear-gradient(180deg, var(--cream) 0%, #fff 120%);
-  color: #222;
-  min-height: 100vh;
-}
-
-header {
-  background: var(--soft-pink);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 28px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo img {
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: var(--card-shadow);
-}
-
-.logo h1 {
-  font-size: 20px;
-  color: var(--teal);
-  margin: 0;
-}
-
-nav ul {
-  display: flex;
-  gap: 18px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-nav a:hover {
-  font-weight: 900;
-}
-
-@media (max-width: 900px) {
-  nav a {
-    font-weight: 800 !important;
-  }
-}
-
-.auth {
-  display: flex;
-  gap: 10px;
-}
-
-.nav-cart-emoji {
-  font-size: 20px;
-}
-.btn {
-  background: var(--teal);
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 20px;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.btn.ghost {
-  background: transparent;
-  color: #444;
-  border: 1px solid rgba(0,0,0,0.06);
+    margin: 0;
+    background: linear-gradient(180deg, var(--cream) 0%, #fff 120%);
+    color: #222;
+    min-height: 100vh;
 }
 
 .container {
-  max-width: 1150px;
-  margin: 28px auto;
-  padding: 0 20px;
-}
-
-.hero {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  margin-bottom: 18px;
-}
-
-.hero .left {
-  flex: 1;
-  padding: 20px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.5));
-  border-radius: 18px;
-  box-shadow: var(--card-shadow);
-}
-
-.hero h2 {
-  margin: 0 0 10px;
-  font-size: 28px;
-  color: #333;
-}
-
-.hero p {
-  color: var(--muted);
-  margin: 0 0 16px;
-}
-
-.search {
-  display: flex;
-  gap: 10px;
-}
-
-.search input {
-  padding: 12px 14px;
-  border-radius: 9999px;
-  border: 2px solid rgba(97,191,190,0.18);
-  width: 420px;
-  outline: none;
-}
-
-.promo {
-  background: var(--bright-pink);
-  color: #fff;
-  padding: 12px 16px;
-  border-radius: 12px;
-  font-weight: 700;
-  display: inline-block;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
-  gap: 18px;
-  margin-top: 18px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 12px;
-  box-shadow: var(--card-shadow);
-  overflow: hidden;
-  cursor: default;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.card h3 {
-  margin: 0;
-  font-size: 16px;
-  color: var(--teal);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 20px;
-  height: 40px;
-  min-height: 40px;
-  max-height: 40px;
-}
-
-.card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.card p.small {
-  min-height: 65px;
-  max-height: 65px;
-  overflow: hidden;
-}
-
-.price {
-  font-weight: 800;
-  color: var(--bright-pink);
-  margin-top: auto;
-  margin-bottom: 10px;
-}
-
-.card .actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-top: 0;
-  padding-bottom: 6px;
+    max-width: 1150px;
+    margin: 28px auto;
+    padding: 0 20px;
 }
 
 .small {
-  font-size: 12px;
-  color: #777;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  color: #666;
-  margin-top: 40px;
-}
-
-.modal-backdrop {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-  align-items: center;
-  justify-content: center;
-  z-index: 200;
-}
-
-.modal {
-  background: #fff;
-  border-radius: 12px;
-  padding: 18px;
-  max-width: 520px;
-  width: 94%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}
-
-.modal h4 {
-  margin: 0 0 8px;
-}
-
-.close-x {
-  float: right;
-  cursor: pointer;
-  font-weight: 700;
-  color: #888;
-}
-
-.form-row {
-  display: flex;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-input[type="text"], input[type="email"], input[type="password"], textarea, select {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  width: 100%;
-  outline: none;
-  font-size: 14px;
-}
-
-textarea {
-  min-height: 80px;
-  resize: vertical;
-}
-
-.cart-list {
-  max-height: 240px;
-  overflow: auto;
-  padding: 6px 0;
-  margin: 8px 0;
-}
-
-.cart-item {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #f3f3f3;
-}
-
-.cart-item img {
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.cart-item .meta {
-  flex: 1;
-}
-
-.cart-item .meta h5 {
-  margin: 0;
-  font-size: 14px;
-}
-
-.cart-item .meta p {
-  margin: 4px 0 0;
-  font-size: 13px;
-  color: #777;
-}
-
-.cart-item .rm {
-  background: transparent;
-  border: none;
-  color: #b00;
-  cursor: pointer;
-  font-weight: 700;
-}
-
-.total-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  font-weight: 800;
-}
-
-.checkout-section {
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-}
-
-.flex-row {
-  display: flex;
-  gap: 12px;
+    font-size: 12px;
+    color: #777;
 }
 
 .muted {
-  color: #777;
-  font-size: 13px;
+    color: #777;
+    font-size: 13px;
 }
 
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 700px) {
-  .hero {
-    flex-direction: column;
-  }
-  .search input {
-    width: 100%;
-  }
-  .card img {
-    height: 160px;
-  }
-} 
-
-@media (max-width: 900px) {
-  header {
-    flex-wrap: wrap;
-    padding: 14px 18px;
-  }
-  nav ul {
-    gap: 10px;
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-  }
-  .logo img {
-    width: 38px;
-    height: 38px;
-  }
-  .logo h1 {
-    font-size: 18px;
-  }
-  .hero {
-    flex-direction: column;
-  }
-  .hero .left {
-    width: 100%;
-  }
-  .hero img {
-    width: 100%;
-  }
-  .search input {
-    width: 100%;
-  }
-  .products {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
-}
-@media (max-width: 420px) {
-  .products {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  }
-  .card img {
-    height: 120px;
-  }
-  .card h3 {
-    font-size: 14px;
-  }
-  .card p {
-    font-size: 12px;
-  }
-  .btn {
-    padding: 6px 10px;
-    font-size: 12px;
-  }
-  .modal h4 {
-    font-size: 16px;
-  }
-  .btn.add-cart-img img {
-    width: 26px;
-    height: 26px;
-    object-fit: contain;
-  }
+    align-items: center;
 }
 
-.cart-icon-btn {
-  display: none;
-  background: transparent;
-  border: none;
-  padding: 4px !important;
-}
-
-.cart-icon-btn img,
-.btn.add-cart-img img {
-  width: 20px !important;
-  height: 20px !important;
-  object-fit: contain;
-}
-.nav-cart-emoji {
-  display: none;
-}
-.auth {
-  display: flex;
-  gap: 10px;
-}
+/* ====================================
+   3. HEADER & NAVIGASI
+   ==================================== */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 16px;
-  gap: 16px;
+    background: var(--soft-pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    /* Menggunakan padding default desktop */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: var(--card-shadow);
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: var(--teal);
+    margin: 0;
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav a:hover {
+    font-weight: 900;
 }
 
 .auth {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
+/* Mengatur tampilan keranjang di navigasi atas */
+.nav-cart-emoji {
+    display: none; /* Sembunyikan emoji keranjang (🛒) di navigasi agar hanya teks yang terlihat */
+    font-size: 20px; /* Aturan asli disimpan, namun display none yang utama */
+}
+
+/* ====================================
+   4. Tombol Umum (BTN)
+   ==================================== */
 .btn {
-  padding: 8px 14px;
-  border: none;
-  cursor: pointer;
-  border-radius: 6px;
+    background: var(--teal);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .btn.ghost {
-  background: transparent;
-  border: 1px solid #ddd;
+    background: transparent;
+    color: #444;
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-@media(max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-  }
-
-  nav {
-    width: 100%;
-    order: 2;
-  }
-
-  nav ul {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .auth {
-    order: 3;
-    width: 100%;
-    justify-content: flex-end;
-  }
+/* ====================================
+   5. Hero Section
+   ==================================== */
+.hero {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 18px;
 }
+
+.hero .left {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+    border-radius: 18px;
+    box-shadow: var(--card-shadow);
+}
+
+.hero h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+.hero p {
+    color: var(--muted);
+    margin: 0 0 16px;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.search input {
+    padding: 12px 14px;
+    border-radius: 9999px;
+    border: 2px solid rgba(97, 191, 190, 0.18);
+    width: 420px;
+    outline: none;
+}
+
+.promo {
+    background: var(--bright-pink);
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* ====================================
+   6. PRODUK & KARTU (CARD)
+   ==================================== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--teal);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 20px;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.card p.small {
+    min-height: 65px;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.price {
+    font-weight: 800;
+    color: var(--bright-pink);
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+/* Kontainer untuk tombol di dalam card */
 .card .actions {
     display: flex;
     gap: 8px;
@@ -516,8 +257,9 @@ nav ul {
     padding-bottom: 6px;
 }
 
+/* --- Tombol Tambahkan ke Keranjang (Desktop Default) --- */
 .add-to-cart {
-    flex: 1; 
+    flex: 1;
     padding: 10px 14px;
     background: var(--teal);
     color: #fff;
@@ -525,18 +267,286 @@ nav ul {
     border-radius: 20px;
     font-weight: 700;
     cursor: pointer;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6px; 
+    gap: 6px;
 }
+
+/* Di Desktop, sembunyikan ikon keranjang */
 .add-to-cart .icon {
-    display: none; 
+    display: none;
 }
+
+/* Di Desktop, tampilkan teks */
 .add-to-cart .text {
-    display: inline; 
+    display: inline;
 }
+
+/* Tombol Lihat/Ghost di Desktop */
 .card .actions .btn.ghost {
-    flex-shrink: 0; 
-    padding: 10px 14px; 
+    flex-shrink: 0;
+    padding: 10px 14px;
+}
+
+/* ====================================
+   7. MODAL & KERANJANG
+   ==================================== */
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px;
+    max-width: 520px;
+    width: 94%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modal h4 {
+    margin: 0 0 8px;
+}
+
+.close-x {
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+    color: #888;
+}
+
+.form-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.cart-list {
+    max-height: 240px;
+    overflow: auto;
+    padding: 6px 0;
+    margin: 8px 0;
+}
+
+.cart-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #f3f3f3;
+}
+
+.cart-item img {
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cart-item .meta {
+    flex: 1;
+}
+
+.cart-item .meta h5 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cart-item .meta p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.cart-item .rm {
+    background: transparent;
+    border: none;
+    color: #b00;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-weight: 800;
+}
+
+.checkout-section {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    gap: 12px;
+}
+
+/* ====================================
+   8. FOOTER
+   ==================================== */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* ====================================
+   9. MEDIA QUERIES (RESPONSIVE)
+   ==================================== */
+
+/* --- 9.1 Tablet/Mobile Besar (768px) --- */
+@media (max-width: 768px) {
+    
+    /* Perbaikan Header (Login/Daftar) */
+    header {
+        flex-wrap: wrap; 
+        padding: 10px 16px;
+    }
+    
+    .auth {
+        order: 1; /* Posisikan Auth di baris pertama */
+        width: auto;
+        display: flex; 
+        gap: 10px;
+    }
+
+    nav {
+        width: 100%; 
+        order: 2; /* Navigasi di bawah logo/auth */
+        margin-top: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    /* Tombol Add-to-Cart Responsive (Hanya Ikon) */
+    .add-to-cart {
+        flex: 0 0 auto;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+    }
+
+    .add-to-cart .text {
+        display: none;
+    }
+
+    .add-to-cart .icon {
+        display: inline;
+        font-size: 18px;
+    }
+    
+    /* Tombol Lihat/Ghost Responsive (Ikon Serasi) */
+    .card .actions .btn.ghost {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* --- 9.2 Tablet Landscape (900px) --- */
+@media (max-width: 900px) {
+    nav ul {
+        gap: 10px;
+    }
+    nav a {
+        font-weight: 800 !important;
+    }
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+    .logo h1 {
+        font-size: 18px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero .left {
+        width: 100%;
+    }
+    /* Aturan img hero yang duplikat dihapus */
+    .search input {
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+}
+
+/* --- 9.3 Mobile Sedang (700px) --- */
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+    }
+    .search input {
+        width: 100%;
+    }
+    .card img {
+        height: 160px;
+    }
+}
+
+/* --- 9.4 Mobile Sangat Kecil (420px) --- */
+@media (max-width: 420px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+    .card img {
+        height: 120px;
+    }
+    .card h3 {
+        font-size: 14px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+    .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .modal h4 {
+        font-size: 16px;
+    }
+    /* Aturan lama untuk ikon keranjang yang duplikat/tidak terpakai dihapus */
 }
