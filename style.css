@@ -508,82 +508,62 @@ nav ul {
     justify-content: flex-end;
   }
 }
-.actions {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+.card .actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 6px;
 }
 
-.actions button {
-  width: 100%;
-  padding: 10px;
-  background: var(--teal);
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-}
-.actions button .icon {
-  display: none;     
-}
-
-.actions button .text {
-  display: inline;   
-}
-@media (max-width: 768px) {
-  .actions button {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .actions button .text {
-    display: none;     
-  }
-
-  .actions button .icon {
-    display: inline;   
-    font-size: 18px;
-  }
-}
-.add-to-cart .text { display: inline; }
-.add-to-cart .icon { display: none; }
-.add-to-cart::before {
-  content: ""; 
-  margin-right: 0;
-}
 .add-to-cart {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  padding: 10px 14px;
-  background: var(--teal);
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  font-weight: 700;
-  cursor: pointer;
+    flex: 1; 
+    padding: 10px 14px;
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 6px; 
 }
-
-.add-to-cart .text {
-  display: inline;
-}
-
 .add-to-cart .icon {
-  display: none;
+    display: none; 
+}
+.add-to-cart .text {
+    display: inline; 
+}
+.card .actions .btn.ghost {
+    flex-shrink: 0; 
+    padding: 10px 14px; 
 }
 
 @media (max-width: 768px) {
-  .add-to-cart .text {
-    display: none;
-  }
-  .add-to-cart .icon {
-    display: inline;
-    font-size: 18px;
-  }
+    .add-to-cart {
+        flex: 0 0 auto;
+        width: 40px; 
+        height: 40px;
+        padding: 0;
+        border-radius: 50%; 
+        justify-content: center;
+    }
+    .add-to-cart .text {
+        display: none; 
+    }
+    .add-to-cart .icon {
+        display: inline; 
+        font-size: 18px; 
+    }
+    .card .actions .btn.ghost {
+        width: 40px; 
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
