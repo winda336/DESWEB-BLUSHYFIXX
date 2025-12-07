@@ -550,25 +550,40 @@ nav ul {
     font-size: 18px;
   }
 }
-<button class="btn add-to-cart">
-  <span>Tambahkan ke keranjang</span>
-</button>
+.add-to-cart .text { display: inline; }
+.add-to-cart .icon { display: none; }
 .add-to-cart::before {
   content: ""; 
   margin-right: 0;
 }
-
-.add-to-cart span {
-  display: inline; 
+.add-to-cart {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: var(--teal);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
+
+.add-to-cart .text {
+  display: inline;
+}
+
+.add-to-cart .icon {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .add-to-cart::before {
-    content: "🛒"; 
-    margin-right: 0;
+  .add-to-cart .text {
+    display: none;
   }
-  .add-to-cart span {
-    display: none; 
+  .add-to-cart .icon {
+    display: inline;
+    font-size: 18px;
   }
 }
-
-
