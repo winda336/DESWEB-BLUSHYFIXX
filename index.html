@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Blushy — Toko Kecantikan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <img src="image/blushy_transparan.png" alt="logo">
+      <h1>Blushy</h1>
+    </div>
+    <nav>
+      <ul style="display:flex;align-items:center;gap:14px">
+        <li><a id="navHome">Beranda</a></li>
+        <li><a id="navProducts">Produk</a></li>
+        <li><a id="openCart">Keranjang 🛒 <span id="cartCount" style="background:var(--bright-pink);color:#fff;padding:2px 7px;border-radius:9999px;font-size:12px;margin-left:8px">0</span></a></li>
+        <li><a id="navPromo">Promo</a></li>
+      </ul>
+    </nav>
+    <div class="auth">
+      <button class="btn ghost" id="btnLogin">Login</button>
+      <button class="btn" id="btnRegister">Daftar</button>
+    </div>
+  </header>
 
-<header>
-  <div class="logo">
-    <img src="image/blushy_transparan.png" alt="logo">
-    <h1>Blushy</h1>
-  </div>
+  <main class="container">
+    <section class="hero">
+      <div class="left">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <h2>Flash Sale Hari Ini — Diskon sampai 50%</h2>
+            <p class="muted">Produk terbaik untuk perawatan kulitmu. Gratis ongkir untuk pesanan tertentu.</p>
+          </div>
+          <div class="promo">Hemat Sekarang</div>
+        </div>
 
-  <nav>
-    <ul>
-      <li><a id="navHome">Beranda</a></li>
-      <li><a id="navProducts">Produk</a></li>
-      <li>
-        <a id="openCart" class="cart-link">
-          <span class="nav-cart-text">Keranjang</span>
-          🛒
-          <span id="cartCount" class="badge">0</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="auth">
-    <button class="btn ghost" id="btnLogin">Login</button>
-    <button class="btn" id="btnRegister">Daftar</button>
-  </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <div class="left">
-      <h2>Flash Sale Hari Ini — Diskon sampai 50%</h2>
-      <p class="muted">Produk terbaik untuk perawatan kulitmu. Gratis ongkir untuk pesanan tertentu.</p>
-      <div class="search">
-        <input id="searchInput" placeholder="Cari produk, misal: serum, lip tint, face wash..." />
+        <div style="margin-top:14px" class="search">
+          <input id="searchInput" placeholder="Cari produk, misal: serum, lip tint, face wash..." />
+        </div>
       </div>
-    </div>
-    <div class="voucher-wrapper">
-      <img src="image/voucher.png" class="voucher-banner" alt="Voucher Promo">
-    </div>
-  </section>
 
-  <section class="products" id="productGrid"></section>
-</main>
-
-<footer>
-  © 2025 Blushy • Toko Kecantikan Online— Made with ❤️
-</footer>
-
-<div id="backdrop" class="modal-backdrop center" style="display:none">
-  <div class="modal" role="dialog" aria-modal="true" id="modalBox"></div>
+    <div style="width:300px;cursor:pointer" onclick="openVoucherInfo()">
+  <img style="width:100%;border-radius:14px;box-shadow:var(--card-shadow);transition:transform 0.2s" 
+       src="image/voucher_desweb.png" alt="promo"
+       onmouseover="this.style.transform='scale(1.05)'"
+       onmouseout="this.style.transform='scale(1)'">
+  <p style="text-align:center;font-size:12px;color:#666;margin-top:8px">🎁 Klik untuk info voucher</p>
 </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="products" id="productGrid">
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Blushy • Toko Kecantikan Online — Made with ❤️
+  </footer>
+
+  <div id="backdrop" class="modal-backdrop center" style="display:none">
+    <div class="modal" role="dialog" aria-modal="true" id="modalBox">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
